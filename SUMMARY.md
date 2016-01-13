@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [Development Environment](DevelopmentEnvironment.md)
-* React
+* [React](React.md)
 * TypeScript
 * HelloWorld
 * References
