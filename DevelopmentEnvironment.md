@@ -1,22 +1,46 @@
 #Development Environment
 
-The first thing I need to do is to setup my development environment.
+The first thing we need to do is setup a development environment enable React and TypeScript development. I am coding on a Windows laptop, but most of the steps can be done on other OS's with minor adjustments.
+
+##IDE
+
+To develop React and TypeScript you can use any text editor. To make things easier it may be worth it to get an integrated development environment (IDE) that has features and plug-ins specifically for JavaScript and TypeScript development. Choosing an IDE is a religious experience so I want start an ideological war by saying use this or that IDE. 
+
+I would recommend looking at some of the popular ones active today:
+
+- [Aptana - aptana.com](http://www.aptana.com/)
+- [Atom - atom.io](https://atom.io/)
+- [Brackets - brackets.io](http://brackets.io/)
+- [Cloud9 - c9.io](https://c9.io/) - cloud based editor
+- [Eclipse - eclipse.org](https://eclipse.org/downloads/)
+- [Komodo - komodoide.com](http://komodoide.com/)
+- [NetBeans - netbeans.org](https://netbeans.org/)
+- [Sublime - sublimetext.com](http://www.sublimetext.com/)
+- [Vim - vim.org](http://www.vim.org/)
+- [Visual Studio Code - code.visualstudio.com](https://code.visualstudio.com/)
+- [WebStorm - jetbrains.com/webstorm](https://www.jetbrains.com/webstorm/)
+
+I am probably missing some that others would consider popular. This is just a tip of the IDE iceberg to give some ideas on what's available. In the end, the IDE you choose is not important in getting started. I will say that I enjoy Atom, Brackets, Cloud9, Sublime and Visual Studio Code. I won't vote for one over the other because they all work. Try a few IDE's and pick one that fits your development style without having to jump through hoops to do common tasks. If your goal is to get up to speed on React and TypeScript development, don't spend too much time trying to find and configure the perfect IDE.
 
 ##Package Management
 
-I want to use NPM, the Node Package Manager, to manage my client side dependencies. NPM is like NuGet for client side dependencies. If you don't have npm, you'll have to [install it](https://docs.npmjs.com/getting-started/installing-node). 
+As with many development projects, there can be many dependencies that need to be managed to enable development with external libraries, frameworks, tools, API's, etc. Since we are talking about a JavaScript project, we will use the popular Node Package Manager (NPM) to manage most of our dependencies. NPM is like NuGet or Maven, but for node modules. 
 
-Next, I create a directory for my project, then open a command prompt at the new directory. Now I run
+If you don't have npm, you'll have to [install it (https://docs.npmjs.com/getting-started/installing-node)](https://docs.npmjs.com/getting-started/installing-node). 
+
+###Initialize NPM
+
+Next, I create a directory for my project, then open a command prompt at the new directory (name isn't important). Now, I run
 
 `npm init`
 
-I usually update the description and author info in the init utility. The result is a a package.json file being created. You can think of package.json like package.config for NuGet, this file will have a listing of all of the dependencies for the project.
+I usually update the description and author info in the init utility. The result is a package.json file being created. You can think of package.json like package.config for NuGet, this file will have a listing of all of the dependencies for the project.
 
-##Initial Dependencies
+###Initial Dependencies
 
-There are a few dependencies that I know that I will be using so I install them next. With NPM we are able to separate dependencies that are only needed for development from dependencies that are needed at runtime.
+There are a few dependencies that I know that we will be using so I install them. With NPM we are able to separate dependencies that are only needed for development from dependencies that are needed at runtime. If you were to distribute an application you can help user's of your app from having to download your development dependencies when they may not need them.
 
-###Runtime Dependencies
+####Runtime Dependencies
 
 - bootstratp - CSS styling.
 - react - view engine.
@@ -28,7 +52,7 @@ To install these run
 
 `npm i --save bootstrap react react-dom react-router toastr`
 
-###Development Dependencies
+####Development Dependencies
 
 - browserify - bundle up JavaScript dependencies into a single file.
 - browser-sync - refresh browser after changes.
