@@ -79,7 +79,7 @@ To install them run
 
 ##Build
 
-Next, we will setup our build automation. The primary reason we want to do this not is so we don't have to run the commnand line everytime we make changes. In fact, our build automation will allow us to automatically see the results of changes in the browser after we save them. We can start one simple task in the command line and the automation will take care of linting, compiling, bundling, refreshing the browser and more when ever we make changes.This allows us to get very fast feedback on changes. If we have fast unit tests, this automation will also help us keep some bugs from creeping into our app.
+Next, we will setup our build automation. The primary reason we want to do this now is so we don't have to run the commnand line everytime we make changes. In fact, our build automation will allow us to automatically see the results of changes in the browser after we save them. We can start one simple task in the command line and the automation will take care of linting, compiling, bundling, refreshing the browser and more when ever we make changes.This allows us to get very fast feedback on changes. If we have fast unit tests, this automation will also help us keep some bugs from creeping into our app.
 
 ###Gulp
 We are going to use Gulp 4 for this tutorial. At the time of this writing, this new version of Gulp hasn't been releases. The main reason I decided to go with this early release version is that it has new features that will make our automation a little easier to work with.
