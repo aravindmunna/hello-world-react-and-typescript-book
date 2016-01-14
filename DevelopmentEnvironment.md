@@ -5,7 +5,7 @@ The first thing we need to do is setup a development environment to enable React
 ##IDE
 
 To develop React and TypeScript you can use any text editor. To make things easier it may be worth it to get an integrated development environment (IDE) that has features and plug-ins specifically for JavaScript and TypeScript development. 
-Choosing an IDE is a religious experience so I want start an ideological war by saying use this or that IDE. I would recommend looking at some of the popular ones active today:
+Choosing an IDE is a religious experience so I won't start an ideological war by saying use this or that IDE. I would recommend looking at some of the popular ones active today:
 
 - [Aptana - aptana.com](http://www.aptana.com/)
 - [Atom - atom.io](https://atom.io/)
