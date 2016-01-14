@@ -86,7 +86,7 @@ We are going to use Gulp 4 for this tutorial. At the time of this writing, this 
 
 The main feature we want to exploit is the new task execution system. Before Gulp 4, all tasks ran in parallel. This was great becuse it made things fast, but many times there is a series of tasks that need to run in sequence. Getting tasks to run sequentially can get complicated. With the new task execution we can define a pipeline of tasks and decide if we want parallel or series execution.
 
-First we need to install Gulp 4. To do this I will uninstall Gulp and reinstall version 4.
+First we need to install Gulp 4. Because I already have Gulp installed I need to firt uninstall Gulp and then reinstall version 4.
 
 `npm uninstall --save-dev gulp`
 
