@@ -58,7 +58,9 @@ Data is passed down the component hierarchy in properties (parent-to-child commu
 
 Events flow up the hierarchy and can be used to instruct higher components to update state (child-to-parent communication). When you have components that need to communicate that don't share a parent child relationship, you can write a global event system or use a pattern such as Flux to enable cross component communication.
 
-Components manage their own state, but every component doesn't need state that persists across rendering. When you keep the number of components with state low, it is easier to understand the state of your application over time, hence easier to debug and maintain. We move from writing imperative hard to understand transactional logic to writing declarative functions to manage the state of your components.
+Components manage their own state, but every component doesn't need state that persists across rendering. When you keep the number of components with state low, it is easier to understand the state of your application over time, hence easier to debug and maintain. 
+
+We move from writing imperative hard to understand transactional logic to writing declarative functions to manage the state of your components.
 
 With TypeScript we extend the `React.Component<P,S>` class to create components. You also define the type used for props and state by passing the expected types as <P,S>. 
 
