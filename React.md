@@ -52,7 +52,7 @@ You can read more about tsconfig file at [https://github.com/TypeStrong/atom-typ
 
 ##Component
 
-A React Component is a reusable object that can be composed together with other component to render a user interface. Composition is through a parent child hierarchy. There can only be one root component and there can be many levels of children to build up the DOM for the UI. To make it easy we impose rules that govern how components communicate (the rules can be ignored).
+A React Component is a reusable object that can be composed together with other component to render a user interface (UI). Composition is through a parent child hierarchy. There can only be one root component and there can be many levels of children to build up the DOM for a UI. To make it easy we impose rules that govern how components communicate (the rules can be ignored).
 
 Data is passed down the component hierarchy in properties (parent-to-child communication) and properties should be immutable because they are passed down every time higher components are re-rendered, so any changes in properties would be loss on each re-render. 
 
@@ -60,7 +60,7 @@ Events flow up the hierarchy and can be used to instruct higher components to up
 
 Components manage their own state, but every component doesn't need state that persists across rendering. When you keep the number of stateful components low, it is easier to understand the state of your application over time, hence easier to debug and maintain. When we know where, when, and how state changes and that properties don't change once they are set there is a lot of guess work removed when we are trying to debug or update our applications.
 
-We move from writing imperative hard to understand transactional logic to writing declarative functions to manage the state of your components.
+These flow rules allows us to easily see how data streams through our application. We move from writing imperative hard to understand transactional logic to writing declarative functions to manage the state of your components.
 
 With TypeScript we extend the `React.Component<P,S>` class to create components. You also define the type used for props and state by passing the expected types as <P,S>. 
 
