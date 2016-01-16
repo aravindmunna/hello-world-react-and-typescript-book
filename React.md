@@ -20,6 +20,8 @@ These flow rules allows us to easily see how data streams through our applicatio
 
 One of the great benefits of using React is the speed at which it can update the DOM.
 
+Components have a method named setState. You called this method any time the state for the component is updated. setState will re-renders itself and all of the children in its subtree. If you want to improve performance of this re-render you should call shouldComponentUpdate on components that should not re-render based on some conditions you set in the method. 
+
 ##TypeScript Definition File References
 
 To use external modules in TypeScript you should provide a definition of the types used in the module. This will activate the IDE and the TypeScript compiler's ability to use these types to help catch errors.
