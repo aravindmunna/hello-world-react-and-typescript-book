@@ -16,6 +16,10 @@ Components manage their own state, but every component doesn't need state that p
 
 These flow rules allows us to easily see how data streams through our application. We move from writing imperative hard to understand transactional logic to writing declarative functions to manage the state of components.
 
+##React Component Rendering
+
+One of the great benefits of using React is the speed at which it can update the DOM.
+
 ##TypeScript Definition File References
 
 To use external modules in TypeScript you should provide a definition of the types used in the module. This will activate the IDE and the TypeScript compiler's ability to use these types to help catch errors.
