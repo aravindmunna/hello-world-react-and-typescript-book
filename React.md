@@ -52,7 +52,7 @@ You can read more about tsconfig file at [https://github.com/TypeStrong/atom-typ
 
 ##Component
 
-A React Component is a reusable object that can be composed together with other component to render a user interface. Composition is through a parent child hierarchy. There can only be one root component and there can be many levels of children to build up the DOM for the UI. If a component has state it manages its own state. Data is passed down the hierarchy in properties and events flow up the hierarchy.
+A React Component is a reusable object that can be composed together with other component to render a user interface. Composition is through a parent child hierarchy. There can only be one root component and there can be many levels of children to build up the DOM for the UI. Components manage their own state. Data is passed down the component hierarchy in properties and events flow up the hierarchy.
 
 With TypeScript we extend the `React.Component<P,S>` class to create components. You also define the type used for props and state by passing the expected types as <P,S>. 
 
