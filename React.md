@@ -69,3 +69,6 @@ You can enforce props to be read-only in TypeScript by using a TypeScript proper
 Events flow up the hierarchy and can be used to instruct higher components to update state (child-to-parent communication). When you have components that need to communicate that don't share a parent child relationship, you can write a global event system or even better use a pattern such as [Flux](https://facebook.github.io/flux/) to enable cross component communication.
 
 These flow rules allows us to easily visualize how data streams through our application. 
+
+##React Component Lifecycle
+
