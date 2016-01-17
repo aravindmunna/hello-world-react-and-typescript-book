@@ -4,7 +4,7 @@ React is a way of writing declarative views where a view is a function of data d
 
 ##React Component
 
-A React Component is a reusable JavaScript object that can be composed together with other components to build up a user interface (UI). Composition is achieved through a component parent child hierarchy. There can only be one root component and there can be many levels of children. Each component represent a part of a document object model (DOM) for a UI. 
+A React Component is a reusable JavaScript object that can be composed together with other components to build up a UI. Composition is achieved through a component parent child hierarchy. There can only be one root component and there can be many levels of children. Each component represent a part of a DOM for a UI. 
 
 ##React Component Communication and Data Flow Rules
 
