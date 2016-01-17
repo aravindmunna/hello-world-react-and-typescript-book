@@ -4,7 +4,7 @@
 
 React is a way of writing declarative views where a view is a function of data defined in terms of state.
 
-##React Component
+###React Component
 
 A React Component is a reusable object that can be composed together with other component to render a user interface (UI). Composition is through a parent child hierarchy. There can only be one root component and there can be many levels of children to build up the DOM for a UI. To make it easy we impose rules that govern how components communicate (the rules can be ignored).
 
@@ -16,7 +16,7 @@ Components manage their own state, but every component doesn't need state that p
 
 These flow rules allows us to easily see how data streams through our application. We move from writing imperative hard to understand transactional logic to writing declarative functions to manage the state of components.
 
-##React Component Rendering
+###React Component Rendering
 
 One of the great benefits of using React is the speed at which it can update the DOM.
 
@@ -26,7 +26,21 @@ If you want to improve performance of rendering you should define shouldComponen
 
 If React determines that it should render it will render a virtual DOM. React compares the virtual DOM from the previous render with the current render to decide what has to actually be updated in the device's DOM. It is much more efficient for React to update the virtual DOM made of JavaScript objects than say a browser DOM. If changes are found React will [reconcile](https://facebook.github.io/react/docs/reconciliation.html) the DOM to make the minimum number of changes to the device's DOM.
 
-##TypeScript Definition File References
+###React Component Props and State
+
+Props and state are both plain JavaScript objects that can be passed to a component to provide the attributes of a component used to alter the behavior of the component and render HTML. There are some suggestions regarding props and state to help keep your application maintainable and easier to debug. These are only suggestions and there is nothing in React that will prevent you from not following them. If you want your application to be easier to reason about, I suggest you follow some guidelines to help make the state in your application easier to maintain and debug.
+
+####React Component Props
+
+You can think of props as the components configuration or the external public API of the component. Once props are set don't expect them to stay in sync as the component goes through its lifecycle. Within the component, props should be considered immutable or read only. After the component is constructed props should not be changed. Parent components can pass props to their child components. A component can set default values for props to keep default values consistent when a props aren't passed in. Default props values will be overridden if props are passed into the component.
+
+####React Component State
+
+You can think of state as the private members of the component. State is only accessible within the component, the parent cannot mutate state. A parent can pass in props to set default values for state during construction of the component. Components use state to enable interactivity. As event happen in the UI state is updated and this causes the React to re-render the DOM with the new state. So, state should only be used for a component's attributes that need to change over time. All other attributes should be props.
+
+##TypeScript
+
+###TypeScript Definition File References
 
 To use external modules in TypeScript you should provide a definition of the types used in the module. This will activate the IDE and the TypeScript compiler's ability to use these types to help catch errors.
 
@@ -93,14 +107,7 @@ export default class MyComponent extends React.Component<{}, {}> {
 
 This is just a simple guide, so any deeper is out of scope. If you would like to get more info on React Components in TypeScript, I suggest taking a look at the type definition at [https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/react/react.d.ts](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/react/react.d.ts). Unless the signature has changed, you can do a search for `type ReactInstance = Component<any, any> | Element;` to get a feel for how the type is constructed and what properties and methods are available.
 
-
-##React Component Props and State
-
-Props and state are both plain JavaScript objects that can be passed to a component to provide the attributes of a component used to alter the behavior of the component and render HTML. There are some suggestions regarding props and state to help keep your application maintainable and easier to debug. These are only suggestions and there is nothing in React that will prevent you from not following them. If you want your application to be easier to reason about, I suggest you follow some guidelines to help make the state in your application easier to maintain and debug.
-
-###React Component Props
-
-You can think of props as the components configuration or the external public API of the component. Once props are set don't expect them to stay in sync as the component goes through its lifecycle. Within the component, props should be considered immutable or read only. After the component is constructed props should not be changed. Parent components can pass props to their child components. A component can set default values for props to keep default values consistent when a props aren't passed in. Default props values will be overridden if props are passed into the component. 
+##TypeScript React Component Props and State
 
 Below we are using props to set a default value for a state value and then using the state value to render in the UI. When using TypeScript for React we define interfaces for the props and state objects. You can see this in the example, IMyComponentProps and IMyComponentState are interfaces that define the types these objects should contain. If your IDE support TypeScript it may be able to use these interfaces to give you visual feedback when you have the wrong types. The TypeScript compiler will also use the interfaces to do type checking. You can get a similar effect in normal React by using propTypes, but I enjoy how TypeScript maps to my C# OOP braint, it makes the component cleaner and easier to read in my opinion.
 
@@ -130,6 +137,3 @@ export default class MyComponent extends React.Component<IMyComponentProps, IMyC
 
 This example is assuming that someValue may get changed over time because it is in a state object (we aren't showing the code that would change the state to keep the code simple). If we know that someValue won't change during the components lifetime we would just use the props values directly in render (`Value set as {this.props.someDefaultValue}`). Since props are immutable and shouldn't change, we only move props to state in the constructor when we know the values will change.
 
-###React Component State
-
-You can think of state as the private members of the component. State is only accessible within the component, the parent cannot mutate state. A parent can pass in props to set default vaules for state during construction of the component. Components use state to enable interactivity. As event happen in the UI state is updated and this causes the React to rerender the DOM with the new state. So, state should only be used for a component's attributes that need to change over time. All other attributes should be props.
