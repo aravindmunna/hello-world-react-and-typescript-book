@@ -7,5 +7,5 @@
 * [TypeScript and React](TypeScriptAndReact.md)
 * [HelloWorld](HelloWorld.md)
 * [References](References.md)
-* Glossary
+* [Glossary](GLOSSARY.md)
 
