@@ -1,4 +1,13 @@
-# DOM
+# Glossary
+
+## DOM
+
 Document object model.
-# UI
+
+## UI
+
 User interface.
+
+## MVC
+
+Model View Controller.
