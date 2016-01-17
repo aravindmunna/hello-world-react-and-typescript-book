@@ -21,7 +21,7 @@ A React Component is a JavaScript function that owns a section of the DOM. Compo
 
 ##JSX
 
-React doesn't have a template system, but you can markup that feels like HTML by using JSX. JSX is an extension of JavaScript that allows you to use XML like constructs in your components to define your view structure. JSX is not a template it is a high level representation of the DOM that must be transformed before it is used. When you use a JSX transformer, like Babel or TypeScipt, JSX elements are transformed to calls to plain JavaScript `React.createElement` methods. 
+React doesn't have a template system, but you can use markup that feels like HTML by using JSX. JSX is an extension of JavaScript that allows you to use XML like constructs in your components to define your view structure. JSX is not a template it is a high level representation of the DOM that must be transformed before it is used. When you use a JSX transformer, like Babel or TypeScipt, JSX elements are transformed to calls to plain JavaScript `React.createElement` methods. 
 
 There are some difference from HTML that you have to watch out for while writing JSX. You can't use JavaScript keywords. For instance, instead of defining a `class` on your JSX element you use `className`. Instead of using `for` to relate a label with an element you use `htmlFor`.
 
