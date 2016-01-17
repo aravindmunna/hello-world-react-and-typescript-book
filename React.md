@@ -10,18 +10,31 @@ A React Component is a JavaScript function that owns a section of the DOM. Compo
 
 React components communicate by passing data. To make it easier to work with components we impose rules that govern how components communicate. The rules can be ignored because there are no mechanisms in React to enforce them, but adhering to some rules makes your application easier to understand, maintain, and debug.
 
+###Handling State: MVC vs React
+
 React is not MVC, it is a view engine. It is hard to compare it to something like Angular, Ember or Backbone because they have fundamental differences. Data in React should be handled differently than it is in MVC. 
 
 In MVC you have mutable data or state in the form of models. Multiple views can depend on a model. Changing a model could change multiple views. A view could change multiple models. In large applications this many-to-many relationship can make it difficult to understand what views depend on models and what models are updated from views. Understanding how data flows and the state of the applicaton over time can be a challenge. The nature of the model view relationship also leads to funky circular dependencies that can be ripe with hard to find bugs.
 
-In React data or state is mutable, but it is private, not shared, and managed in components. Because state is internal there are no side effects from shared model state like MVC. Actually, out of the box state is actually shared by components of the same type in the `this.state` object (not sure how this works yet). By using the concept of stateful and stateless components internal non-shared state can be enforced. A stateful component would map its state to props that are passed down to stateless components for consumption. The stateless component cannot change the props and will always be consistent with its stateful parent.
+In React data or state is mutable, but it is private, not shared, and managed in components. Because state is internal there are no side effects from shared state like MVC. When you keep the number of stateful components low, it is easier to understand the state of your application over time, hence easier to debug and maintain. When we know where, when, and how state changes and that properties don't change once they are set there is a lot of  guess work removed when we are trying to debug or update our applications. By using the concept of stateful and stateless components you can get a better handle on what the current state of your application is.
 
+###Stateful Components
 
-Data is passed down the React component hierarchy in properties (parent-to-child communication). Properties should be immutable because they are passed down every time higher components are re-rendered, so any changes in properties would be loss on each re-render. So, changing properties after they are set is a good way to introduce bugs if you want them, but why would you. You can enforce read-only in TypeScript by using a property with only a getter or in JavaScript ES5+ with `object.defineProperty` with `writable` set to `false`. Using a persisted immutable data structure for properties go even further in enforcing immutability and helps when you need to compare changes in properties over the lifecycle of a component.
+Stateful components manage the state for itself and its child components. A stateful component would map its state to props that are passed down to stateless components for consumption. The props don't change once set and will always be consistent with the stateful component that set them. Whenever state is updated (calling `this.setState`) the stateful component will render itself and all of its children.
+
+###Stateless Component
+
+Stateless components don't hold state and depend on thier stateful parent component for state. The stateless component can trigger events that would cause the stateful component to update state and therefore update the stateless component. 
+
+###Data Flow
+
+Another way to look at the stateful-to-stateless component relationship is in terms of data flow. Data is passed down the React component hierarchy in props (parent-to-child communication). Props should be immutable because they are passed down every time higher components are re-rendered, so any changes in props would be loss on each re-render. So, changing props after they are set is a good way to introduce bugs if you want them, but why would you? 
+
+You can enforce props to be read-only in TypeScript by using a TypeScript property with only a getter or in JavaScript ES5+ with `object.defineProperty` with `writable` set to `false`. Defining props with persisted immutable data structure, like those found in [immutable.js](https://facebook.github.io/immutable-js/) help further in enforcing immutability and helps simplify comparisons when you need to compare changes in props.
+
+###Event Flow
 
 Events flow up the hierarchy and can be used to instruct higher components to update state (child-to-parent communication). When you have components that need to communicate that don't share a parent child relationship, you can write a global event system or even better use a pattern such as [Flux](https://facebook.github.io/flux/) to enable cross component communication.
-
-Components manage their own state, but every component doesn't need state that persists across rendering. When state is updated the application is re-rendered. When you keep the number of stateful components low, it is easier to understand the state of your application over time, hence easier to debug and maintain. When we know where, when, and how state changes and that properties don't change once they are set there is a lot of  guess work removed when we are trying to debug or update our applications.
 
 These flow rules allows us to easily visualize how data streams through our application. 
 
