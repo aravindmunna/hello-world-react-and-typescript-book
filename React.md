@@ -1,6 +1,19 @@
 #React
 
-React is a way of writing declarative views where a view is a function of data defined in terms of state in some point in time. 
+*React is a library for building composable user interfaces. It encourages the creation of reusable UI components which present data that changes over time.*
+
+*Pete Hunt - http://facebook.github.io/react/blog/2013/06/05/why-react.html*
+
+React is a way of writing declarative views where a view is a function of data defined in terms of data in some point in time. 
+
+```
+c = component
+p = props
+s = state
+c = f(p,s)
+```
+
+React is a small library with a simple API. It is not an MVC framework, but in terms of the view in MVC, React does things differently.
 
 ##React Component
 
