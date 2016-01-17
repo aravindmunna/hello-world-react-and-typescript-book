@@ -8,13 +8,13 @@ A React Component is a JavaScript function that owns a section of the DOM. Compo
 
 ##React Component Communication and Data Flow Rules
 
-To make it easier to work with React components we impose rules that govern how components communicate. The rules can be ignored because there are no mechanisms in React to enforce them.
+React components communicate by passing data. To make it easier to work with components we impose rules that govern how components communicate. The rules can be ignored because there are no mechanisms in React to enforce them.
 
-Data in React should be handled differently than say MVC. 
+Data in React should be handled differently than it is in MVC. 
 
-In MVC you have data or state in the form of models. Multiple views can depend on multiple models. Changing a model could change multiple views. Changing a view could change multiple models. In large applications it can be difficult to understand what views depend on models and what models are updated from views. This also leads to funky circular dependencies that can be ripe with hard to find bugs.
+In MVC you have mutable data or state in the form of models. Multiple views can depend on a model. Changing a model could change multiple views. Changing a view could change multiple models. In large applications this many-to-many relationship can make it difficult to understand what views depend on models and what models are updated from views. Understanding how data flows and the state of the applicaton over time is a challenge. The nature of the model view relationship also leads to funky circular dependencies that can be ripe with hard to find bugs.
 
-In React data or state is managed in components. Each component manages its own state. state is not shared and there is no side effects from shared model state like MVC. 
+In React data or state is mutable, but it is private, not shared, and managed in components. Because state is internal there are no side effects from shared model state like MVC. Actually, out of the box state is actually shared by components of the same type in the `this.state` object (not sure how this works yet). By using the concept of stateful and stateless components internal non-shared state can be enforced. A stateful component would map its state to props that are passed down to stateless components for consumption. The stateless component cannot change the props and will always be consistent with its stateful parent.
 
 
 Data is passed down the React component hierarchy in properties (parent-to-child communication). Properties should be immutable because they are passed down every time higher components are re-rendered, so any changes in properties would be loss on each re-render. So, changing properties after they are set is a good way to introduce bugs if you want them, but why would you. You can enforce read-only in TypeScript by using a property with only a getter or in JavaScript ES5+ with `object.defineProperty` with `writable` set to `false`. Using a persisted immutable data structure for properties go even further in enforcing immutability and helps when you need to compare changes in properties over the lifecycle of a component.
