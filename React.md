@@ -17,7 +17,7 @@ React is a small library with a simple API. It is not an MVC framework, but in t
 
 ##React Component
 
-A React Component is a JavaScript function that owns a section of the DOM. Components can be composed together with other components to build up a UI. Composition is achieved through a tree structure with a component parent-child hierarchy (functions in functions, components in components) modeled as a DDAG. There can only be one root component, but there can be many levels of children. Each component handles its own state and rendering its part of the DOM in a UI.
+A React Component is a JavaScript function that owns a section of the DOM. Components can be composed together with other components to build up a UI. Composition is achieved through a tree structure with a component parent-child hierarchy (functions in functions, components in components) modeled as a DAG. There can only be one root component, but there can be many levels of children. Each component handles its own state and rendering its part of the DOM in a UI.
 
 ##JSX
 
