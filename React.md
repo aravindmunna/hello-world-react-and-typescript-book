@@ -2,7 +2,7 @@
 
 ##React
 
-React is a way of writing declarative views where a view is a function of data defined in terms of state. 
+React is a way of writing declarative views where a view is a function of data defined in terms of state in some point in time. 
 
 ###React Component
 
