@@ -10,7 +10,7 @@ A React Component is a reusable JavaScript object that can be composed together 
 
 To make it easier to work with React components we impose rules that govern how components communicate. The rules can be ignored because there are no mechanisms in React to enforce them.
 
-Data is passed down the component hierarchy in properties (parent-to-child communication). Properties should be read only because they are passed down every time higher components are re-rendered, so any changes in properties would be loss on each re-render. So, changing properties after they are set is a good way to introduce bugs if you want them, but why would you. You can enforce this in TypeScript by using a property with only a getter or in JavaScript with `object.defineProperty` with `writable` set to `false`.
+Data is passed down the component hierarchy in properties (parent-to-child communication). Properties should be read only because they are passed down every time higher components are re-rendered, so any changes in properties would be loss on each re-render. So, changing properties after they are set is a good way to introduce bugs if you want them, but why would you. You can enforce this in TypeScript by using a property with only a getter or in JavaScript ES5+ with `object.defineProperty` with `writable` set to `false`.
 
 Events flow up the hierarchy and can be used to instruct higher components to update state (child-to-parent communication). When you have components that need to communicate that don't share a parent child relationship, you can write a global event system or even better use a pattern such as [Flux](https://facebook.github.io/flux/) to enable cross component communication.
 
