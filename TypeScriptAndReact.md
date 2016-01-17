@@ -2,7 +2,7 @@
 
 ##TypeScript React Component
 
-With TypeScript we extend the `React.Component<P,S>` class to create React components. You also define the type used for props and state by passing the expected types as <P,S>. 
+With TypeScript we extend the `React.Component<P,S>` class to create React components. You also define the type used for props and state by passing the expected types as `<P,S>`. 
 
 Below we have an example where we are exporting a component. Since there can be more than one component in a namespace we mark our default component with the `default` keyword. Even if there are no other components, setting default makes it easier to import the component without having to define the default in the import statement.
 
