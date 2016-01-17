@@ -6,6 +6,8 @@ React is a way of writing declarative views where a view is a function of data d
 
 A React Component is a reusable JavaScript object that can be composed together with other components to build up a user interface (UI). Composition is achieved through a component parent child hierarchy. There can only be one root component and there can be many levels of children. Each component represent a part of a document object model (DOM) for a UI. 
 
+##React Component Communication and Data Flow Rules
+
 To make it easier to work with React components we impose rules that govern how components communicate. The rules can be ignored because there are no mechanisms in React to enforce them.
 
 Data is passed down the component hierarchy in properties (parent-to-child communication). Properties should be immutable because they are passed down every time higher components are re-rendered, so any changes in properties would be loss on each re-render. So, changing properties after they are set is a good way to introduce bugs if you want them, but why would you.
@@ -32,7 +34,7 @@ If React determines that it should render it will render a virtual DOM. React co
 
 ##React Component Props and State
 
-Props and state are both plain JavaScript objects that can be passed to a component to provide the attributes of a component used to alter the behavior of the component and render HTML. There are some suggestions regarding props and state to help keep your application maintainable and easier to debug. These are only suggestions and there is nothing in React that will prevent you from not following them. If you want your application to be easier to reason about, I suggest you follow some guidelines to help make the state in your application easier to maintain and debug.
+Props and state are both plain JavaScript objects that can be passed to a component to provide the attributes of a component used to alter the behavior of the component and render HTML. Related to [React Component Communication and Data Flow Rules](##React Component Communication and Data Flow Rules), there are some suggestions regarding props and state to help keep your application maintainable and easier to debug. These are only suggestions and there is nothing in React that will prevent you from not following them. If you want your application to be easier to reason about, I suggest you follow some guidelines to help make the state in your application easier to maintain and debug.
 
 ###React Component Props
 
