@@ -25,6 +25,8 @@ JSX is an extension of JavaScript that allows you to use XML like constructs in 
 
 There are some difference from HTML that you have to watch out for while writing JSX. You can't use JavaScript keywords. For instance, instead of defining a `class` on your JSX element you use `className`. Instead of using `for` to relate a label with an element you use `htmlFor`.
 
+When you want to render HTML elements you use lowercase as first letter of JSX element. 
+
 ```html
 <div className="container">
     <label htmlFor="hello">Hello</label>
@@ -32,7 +34,11 @@ There are some difference from HTML that you have to watch out for while writing
 </div>
 ```
 
-When you want to render HTML elements you use lowercase as first letter of JSX element. When you want to render a React Component use uppercase as first letter of the JSX element.
+When you want to render a React Component use uppercase as first letter of the JSX element.
+
+```html
+<HelloWorldComponent displayName="Charles" />
+```
 
 You could write your views with React.createElement instead of JSX, but JSX is more approachable by designers and developers that aren't comfortable with JavaScript. Also, using React components with JSX we move from writing views with imperative hard to understand HTML template logic to writing declarative functions to manage the state of components with JavaScript.
 
