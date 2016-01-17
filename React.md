@@ -10,7 +10,14 @@ A React Component is a JavaScript function that owns a section of the DOM. Compo
 
 To make it easier to work with React components we impose rules that govern how components communicate. The rules can be ignored because there are no mechanisms in React to enforce them.
 
-Data is passed down the component hierarchy in properties (parent-to-child communication). Properties should be read only because they are passed down every time higher components are re-rendered, so any changes in properties would be loss on each re-render. So, changing properties after they are set is a good way to introduce bugs if you want them, but why would you. You can enforce this in TypeScript by using a property with only a getter or in JavaScript ES5+ with `object.defineProperty` with `writable` set to `false`.
+Data in React should be handled differently than say MVC. 
+
+In MVC you have data or state in the form of models. Multiple views can depend on multiple models. Changing a model could change multiple views. Changing a view could change multiple models. In large applications it can be difficult to understand what views depend on models and what models are updated from views. This also leads to funky circular dependencies that can be ripe with hard to find bugs.
+
+In React data or state is managed in components. Each component manages its own state. state is not shared and there is no side effects from shared model state like MVC. 
+
+
+Data is passed down the React component hierarchy in properties (parent-to-child communication). Properties should be immutable because they are passed down every time higher components are re-rendered, so any changes in properties would be loss on each re-render. So, changing properties after they are set is a good way to introduce bugs if you want them, but why would you. You can enforce read-only in TypeScript by using a property with only a getter or in JavaScript ES5+ with `object.defineProperty` with `writable` set to `false`. Using a persisted immutable data structure for properties go even further in enforcing immutability and helps when you need to compare changes in properties over the lifecycle of a component.
 
 Events flow up the hierarchy and can be used to instruct higher components to update state (child-to-parent communication). When you have components that need to communicate that don't share a parent child relationship, you can write a global event system or even better use a pattern such as [Flux](https://facebook.github.io/flux/) to enable cross component communication.
 
