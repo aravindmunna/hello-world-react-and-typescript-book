@@ -14,13 +14,19 @@ Data is passed down the component hierarchy in properties (parent-to-child commu
 
 Events flow up the hierarchy and can be used to instruct higher components to update state (child-to-parent communication). When you have components that need to communicate that don't share a parent child relationship, you can write a global event system or even better use a pattern such as [Flux](https://facebook.github.io/flux/) to enable cross component communication.
 
-Components manage their own state, but every component doesn't need state that persists across rendering. When state is updated the application is re-rendered. When you keep the number of stateful components low, it is easier to understand the state of your application over time, hence easier to debug and maintain. When we know where, when, and how state changes and that properties don't change once they are set there is a lot of guess work removed when we are trying to debug or update our applications.
+Components manage their own state, but every component doesn't need state that persists across rendering. When state is updated the application is re-rendered. When you keep the number of stateful components low, it is easier to understand the state of your application over time, hence easier to debug and maintain. When we know where, when, and how state changes and that properties don't change once they are set there is a lot of  guess work removed when we are trying to debug or update our applications.
 
 These flow rules allows us to easily visualize how data streams through our application. 
 
 ##JSX
 
-Using React components with JSX we move from writing views with imperative hard to understand HTML template logic to writing declarative functions to manage the state of components with JavaScript.
+JSX is an extension of JavaScript that allows you to use XML like constructs in your components to define your view structure. When you use a React JSX transformer, like Babel or TypeScipt, JSX elements are transformed to calls to plain JavaScript React.createElement methods. 
+
+There are some difference from HTML that you have to watch out for while writing JSX. You can't use JavaScript keywords. For instance, instead of defining a `class` on your element you use `className`. Instead of using `for` to relate a label with an element use `htmlFor`.
+
+When you want to render HTML elements you use lowercase as first letter of JSX element. When you want to render a React Component use uppercase as first letter of the JSX element.
+
+You could write your views with React.createElement instead of JSX, but JSX is more approachable by designers and developers that aren't comfortable with JavaScript. Also, using React components with JSX we move from writing views with imperative hard to understand HTML template logic to writing declarative functions to manage the state of components with JavaScript.
 
 ##React Component Rendering
 
@@ -34,7 +40,7 @@ If React determines that it should render it will render a virtual DOM. React co
 
 ##React Component Props and State
 
-Props and state are both plain JavaScript objects that can be passed to a component to provide the attributes of a component used to alter the behavior of the component and render HTML. Related to [React Component Communication and Data Flow Rules](#React Component Communication and Data Flow Rules), there are some suggestions regarding props and state to help keep your application maintainable and easier to debug. These are only suggestions and there is nothing in React that will prevent you from not following them. If you want your application to be easier to reason about, I suggest you follow some guidelines to help make the state in your application easier to maintain and debug.
+Props and state are both plain JavaScript objects that can be passed to a component to provide the attributes of a component used to alter the behavior of the component and render HTML. Related to the section on "React Component Communication and Data Flow Rules", there are some suggestions regarding props and state to help keep your application maintainable and easier to debug. These are only suggestions and there is nothing in React that will prevent you from not following them. If you want your application to be easier to reason about, I suggest you follow some guidelines to help make the state in your application easier to maintain and debug.
 
 ###React Component Props
 
