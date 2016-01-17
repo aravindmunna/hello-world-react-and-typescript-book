@@ -2,7 +2,7 @@
 
 ## DAG
 
-[Directed acyclic graph](https://en.wikipedia.org/wiki/Directed_acyclic_graph)
+[Directed acyclic graph - https://en.wikipedia.org/wiki/Directed_acyclic_graph](https://en.wikipedia.org/wiki/Directed_acyclic_graph)
 
 ## DOM
 
