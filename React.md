@@ -4,7 +4,9 @@ React is a way of writing declarative views where a view is a function of data d
 
 ##React Component
 
-A React Component is a reusable object that can be composed together with other component to render a user interface (UI). Composition is through a parent child hierarchy. There can only be one root component and there can be many levels of children to build up the document object model (DOM) for a UI. To make it easier to work with React we impose rules that govern how components communicate. The rules can be ignored because there are no mechanisms in React to enforce them.
+A React Component is a reusable JavaScript object that can be composed together with other components to build up a user interface (UI). Composition is achieved through a component parent child hierarchy. There can only be one root component and there can be many levels of children. Each component represent a part of a document object model (DOM) for a UI. 
+
+To make it easier to work with React components we impose rules that govern how components communicate. The rules can be ignored because there are no mechanisms in React to enforce them.
 
 Data is passed down the component hierarchy in properties (parent-to-child communication). Properties should be immutable because they are passed down every time higher components are re-rendered, so any changes in properties would be loss on each re-render. So, changing properties after they are set is a good way to introduce bugs if you want them, but why would you.
 
