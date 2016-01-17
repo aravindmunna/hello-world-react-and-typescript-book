@@ -67,6 +67,7 @@ Here is a list of our development dependencies
 - gulp-connect - run a webserver with LiveReload.
 - gulp-eslint - run eslint in gulp tasks.
 - gulp-typescript - run typescript compile in gulp tasks.
+- gulp-sourcemaps - generate TypeScript sourcemaps.
 - stream-combiner2 - turn a series of streams into a single stream to enable single error events.
 - typescript - TypeScript dependencies.
 - vinyl-source-stream - convert Browserify stream to vinyl stream used by Gulp.
@@ -74,7 +75,7 @@ Here is a list of our development dependencies
 
 To install them run
 
-`npm install --save-dev browserify browser-sync del eslint gulp gulp-concat gulp-connect gulp-eslint gulp-typescript stream-combiner2 typescript vinyl-source-stream watchify`
+`npm install --save-dev browserify browser-sync del eslint gulp gulp-concat gulp-connect gulp-eslint gulp-typescript gulp-sourcemaps stream-combiner2 typescript vinyl-source-stream watchify`
 
 
 ##Build
