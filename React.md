@@ -17,13 +17,20 @@ React is a small library with a simple API. It is not an MVC framework, but in t
 
 ##React Component
 
-A React Component is a JavaScript function that owns a section of the DOM. Components can be composed together with other components to build up a UI. Composition is achieved through a tree structure with a component parent-child hierarchy (functions in functions). There can only be one root component and there can be many levels of children. Each component handles its own state and rendering its part of the DOM in a UI.
+A React Component is a JavaScript function that owns a section of the DOM. Components can be composed together with other components to build up a UI. Composition is achieved through a tree structure with a component parent-child hierarchy (functions in functions, components in components). There can only be one root component, but there can be many levels of children. Each component handles its own state and rendering its part of the DOM in a UI.
 
 ##JSX
 
-JSX is an extension of JavaScript that allows you to use XML like constructs in your components to define your view structure. When you use a React JSX transformer, like Babel or TypeScipt, JSX elements are transformed to calls to plain JavaScript React.createElement methods. 
+JSX is an extension of JavaScript that allows you to use XML like constructs in your components to define your view structure. When you use a JSX transformer, like Babel or TypeScipt, JSX elements are transformed to calls to plain JavaScript `React.createElement` methods. 
 
-There are some difference from HTML that you have to watch out for while writing JSX. You can't use JavaScript keywords. For instance, instead of defining a `class` on your element you use `className`. Instead of using `for` to relate a label with an element use `htmlFor`.
+There are some difference from HTML that you have to watch out for while writing JSX. You can't use JavaScript keywords. For instance, instead of defining a `class` on your JSX element you use `className`. Instead of using `for` to relate a label with an element you use `htmlFor`.
+
+```html
+<div className="container">
+    <label htmlFor="hello">Hello</label>
+    <input id="hello" />
+</div>
+```
 
 When you want to render HTML elements you use lowercase as first letter of JSX element. When you want to render a React Component use uppercase as first letter of the JSX element.
 
@@ -33,9 +40,9 @@ You could write your views with React.createElement instead of JSX, but JSX is m
 
 One of the great benefits of using React is the speed at which it can update the DOM.
 
-Components have a method named setState. You called this method any time the state for the component is updated. setState will mark the component as dirty and determines if it needs to re-render the virtual DOM for itself and all of the child components in its sub-tree. At the end of each event loop React will call render on all of the components that have been marked dirty by setState, so rendering is a batched operation.
+Components have a method named `setState`. You called this method any time the state for the component is updated. `setState` will mark the component as dirty and determines if it needs to re-render the virtual DOM for itself and all of the child components in its sub-tree. At the end of each event loop React will call render on all of the components that have been marked dirty by `setState`, so rendering is a batched operation.
 
-If you want to improve performance of rendering you should define shouldComponentUpdate to short circuit rendering on components that should not re-render based on comparison of previous and next props and state. If you use immutable data structures, like [immutable.js](https://facebook.github.io/immutable-js/), for props and state, this comparison becomes trivial since you don't have to do deep comparison of immutable objects.
+If you want to improve performance of rendering you should define `shouldComponentUpdate` to short circuit rendering on components that should not re-render based on comparison of previous and next props and state. If you use immutable data structures, like [immutable.js](https://facebook.github.io/immutable-js/), for props and state, this comparison becomes trivial since you don't have to do deep comparison of immutable objects.
 
 If React determines that it should render it will render a virtual DOM. React compares the virtual DOM from the previous render with the current render to decide what has to actually be updated in the device's DOM. To help React efficiently compare DOM versions you can give child elements a `key` attribute with a value that is unique among its siblings. It is much more efficient for React to update the virtual DOM made of JavaScript objects than say a browser DOM. If changes are found React will [reconcile](https://facebook.github.io/react/docs/reconciliation.html) the DOM to make the minimum number of changes to the device's DOM.
 
