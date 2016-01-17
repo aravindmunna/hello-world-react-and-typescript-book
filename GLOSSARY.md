@@ -1,5 +1,9 @@
 # Glossary
 
+## DAG
+
+[Directed acyclic graph](https://en.wikipedia.org/wiki/Directed_acyclic_graph)
+
 ## DOM
 
 Document object model.
@@ -11,7 +15,3 @@ Model View Controller.
 ## UI
 
 User interface.
-
-## DAG
-
-[Directed acyclic graph](https://en.wikipedia.org/wiki/Directed_acyclic_graph)
