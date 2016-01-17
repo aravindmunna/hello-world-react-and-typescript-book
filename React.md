@@ -44,9 +44,9 @@ You could write your views with `React.createElement` instead of JSX, but JSX is
 
 ##React Component Rendering
 
-One of the great benefits of using React is the speed at which it can update the DOM.
+One of the great benefits of using React is the speed at which it can update the DOM. Speed is a core value of the team that develops React. They achieved speed by relying on a virtual representation of the DOM and some clever algorithms that allows React to make changes to the DOM faster than traditional view engines.
 
-Components have a method named `setState`. You called this method any time the state for the component is updated. `setState` will mark the component as dirty and determines if it needs to re-render the virtual DOM for itself and all of the child components in its sub-tree. At the end of each event loop React will call render on all of the components that have been marked dirty by `setState`, so rendering is a batched operation.
+Components have a method named `setState`. You call this method any time the state for the component is updated. `setState` will mark the component as dirty and determines if it needs to re-render the virtual DOM for itself and all of the child components in its sub-tree. At the end of each event loop React will call render on all of the components that have been marked dirty by `setState`. This means that during a single cycle React can render multiple components in one batch.
 
 If you want to improve performance of rendering you should define `shouldComponentUpdate` to short circuit rendering on components that should not re-render based on comparison of previous and next props and state. If you use immutable data structures, like [immutable.js](https://facebook.github.io/immutable-js/), for props and state, this comparison becomes trivial since you don't have to do deep comparison of immutable objects.
 
