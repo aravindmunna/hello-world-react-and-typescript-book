@@ -4,15 +4,15 @@ React is a way of writing declarative views where a view is a function of data d
 
 ##React Component
 
-A React Component is a JavaScript function that owns a section of the DOM. Components can be composed together with other components to build up a UI. Composition is achieved through a tree structure with a component parent-child hierarchy (functions in functions). There can only be one root component and there can be many levels of children. Each component handles state and rendering of a part of a DOM for a UI. 
+A React Component is a JavaScript function that owns a section of the DOM. Components can be composed together with other components to build up a UI. Composition is achieved through a tree structure with a component parent-child hierarchy (functions in functions). There can only be one root component and there can be many levels of children. Each component handles its own state and rendering its part of the DOM in a UI. 
 
 ##React Component Communication and Data Flow Rules
 
-React components communicate by passing data. To make it easier to work with components we impose rules that govern how components communicate. The rules can be ignored because there are no mechanisms in React to enforce them.
+React components communicate by passing data. To make it easier to work with components we impose rules that govern how components communicate. The rules can be ignored because there are no mechanisms in React to enforce them, but adhering to some rules makes your application easier to understand, maintain, and debug.
 
-Data in React should be handled differently than it is in MVC. 
+React is not MVC, it is a view engine. It is hard to compare it to something like Angular, Ember or Backbone because they have fundamental differences. Data in React should be handled differently than it is in MVC. 
 
-In MVC you have mutable data or state in the form of models. Multiple views can depend on a model. Changing a model could change multiple views. Changing a view could change multiple models. In large applications this many-to-many relationship can make it difficult to understand what views depend on models and what models are updated from views. Understanding how data flows and the state of the applicaton over time is a challenge. The nature of the model view relationship also leads to funky circular dependencies that can be ripe with hard to find bugs.
+In MVC you have mutable data or state in the form of models. Multiple views can depend on a model. Changing a model could change multiple views. A view could change multiple models. In large applications this many-to-many relationship can make it difficult to understand what views depend on models and what models are updated from views. Understanding how data flows and the state of the applicaton over time can be a challenge. The nature of the model view relationship also leads to funky circular dependencies that can be ripe with hard to find bugs.
 
 In React data or state is mutable, but it is private, not shared, and managed in components. Because state is internal there are no side effects from shared model state like MVC. Actually, out of the box state is actually shared by components of the same type in the `this.state` object (not sure how this works yet). By using the concept of stateful and stateless components internal non-shared state can be enforced. A stateful component would map its state to props that are passed down to stateless components for consumption. The stateless component cannot change the props and will always be consistent with its stateful parent.
 
