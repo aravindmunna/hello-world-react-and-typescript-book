@@ -7,10 +7,10 @@
 React is a way of writing declarative views where a view is a function of data defined in terms of data in some point in time. 
 
 ```
-c = component
+v = view
 p = props
 s = state
-c = f(p,s)
+v = f(p,s)
 ```
 
 React is a small library with a simple API. It is not an MVC framework, but in terms of the view in MVC, React does things differently.
