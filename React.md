@@ -88,7 +88,9 @@ shouldComponenUpdate(nextProps) {
 }
 ```
 
-For clarity I would recommend naming this component with a Container prefix so that it is evident that it is a stateful component (e.g. `MyFunkyContainer`).
+We don't want wasteful propagation of unnecessary renders.
+
+For clarity I would recommend naming this component with a Container prefix so that it is evident that it is a stateful component (e.g. `MyFunkyContainer`, `MyFunkyTestContainer`).
 
 ###Stateless Component
 
