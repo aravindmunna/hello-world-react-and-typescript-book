@@ -78,13 +78,15 @@ In React data or state is mutable, but it is private, not shared, and managed in
 
 ###Stateful Components
 
-Stateful components manage the state for itself and its child components. A stateful component would map its state to props that are passed down to stateless components for consumption. The props don't change once set and will always be consistent with the stateful component that set them. Whenever state is updated (calling `this.setState`) the stateful component will render itself and all of its children. If we followed DDD, every bounded context would have a container that would be like an aggregate for its child components. A stateful component is a container that provides data or state service to stateless components. It should handle events triggered by its children. Ideally, this container wouldn't have props and would be able to compose its state on all its own, independent of its parent and ancestors. Also, the container should be detached from its parent in terms of rendering. The container should re-render when a parent re-renders, 
+Stateful components manage the state for itself and its child components. A stateful component would map its state to props that are passed down to stateless components for consumption. The props don't change once set and will always be consistent with the stateful component that set them. Whenever state is updated (calling `this.setState`) the stateful component will render itself and all of its children. If we followed DDD, every bounded context would have a container that would be like an aggregate for its child components. A stateful component is a container that provides data or state service to stateless components. It should handle events triggered by its children. Ideally, this container wouldn't have props and would be able to compose its state on all its own, independent of its parent and ancestors. Also, the container should be detached from its parent in terms of rendering. Be careful about re-render when a parent re-renders, 
 
 ```javascript
 shouldComponenUpdate(nextProps) { 
     return false; 
+    //or compare immutable props
 }
 ```
+
 For clarity I would recommend naming this component with a Container prefix so that it is evident that it is a stateful component (e.g. `MyFunkyContainer`).
 
 ###Stateless Component
