@@ -15,6 +15,7 @@ Choosing an IDE is a religious experience so I won't start an ideological war by
 - [Eclipse - eclipse.org](https://eclipse.org/downloads/)
 - [Komodo - komodoide.com](http://komodoide.com/)
 - [NetBeans - netbeans.org](https://netbeans.org/)
+- [Nuclide - nuclide.io/](http://nuclide.io/)
 - [Sublime - sublimetext.com](http://www.sublimetext.com/)
 - [Vim - vim.org](http://www.vim.org/)
 - [Visual Studio Code - code.visualstudio.com](https://code.visualstudio.com/)
