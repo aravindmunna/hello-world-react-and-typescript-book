@@ -4,7 +4,7 @@
 
 *Pete Hunt - http://facebook.github.io/react/blog/2013/06/05/why-react.html*
 
-React is a way of writing declarative views where a view is a function of data defined in terms of data in some point in time. 
+React is a way of writing declarative views where a view is a function of data defined in terms of the state of data in some point in time. 
 
 ```
 v = view
