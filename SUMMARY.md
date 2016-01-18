@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [Development Environment](DevelopmentEnvironment.md)
    * [IDE](IDE.md)
-   * PackageManagement
+   * [PackageManagement](PackageManagement.md)
 * [React](React.md)
 * [TypeScript](TypeScript.md)
 * [TypeScript and React](TypeScriptAndReact.md)
