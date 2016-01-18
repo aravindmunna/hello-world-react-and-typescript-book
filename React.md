@@ -82,13 +82,15 @@ Stateful components manage the state for itself and its child components. A stat
 
 ###Stateless Component
 
-Stateless components don't hold state and depend on thier stateful parent component for state. The stateless component can trigger events that would cause the stateful component to update state and therefore update the stateless component. 
+Stateless components don't hold state and depend on their stateful parent component for state. The stateless component can trigger events that would cause the stateful component to update state and therefore update the stateless component. 
 
 ###Data Flow
 
 Another way to look at the stateful-to-stateless component relationship is in terms of data flow. Data is passed down the React component hierarchy in props (parent-to-child communication). Props should be immutable because they are passed down every time higher components are re-rendered, so any changes in props would be loss on each re-render. So, changing props after they are set is a good way to introduce bugs if you want them, but why would you? 
 
 You can enforce props to be read-only in TypeScript by using a TypeScript property with only a getter or in JavaScript ES5+ with `object.defineProperty` with `writable` set to `false`. Defining props with persisted immutable data structure, like those found in [immutable.js](https://facebook.github.io/immutable-js/) help further in enforcing immutability and helps simplify comparisons when you need to compare changes in props.
+
+###Reference Equlity: The Holy Grail
 
 ###Event Flow
 
