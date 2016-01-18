@@ -89,7 +89,7 @@ For clarity I would recommend naming this component with a Container prefix so t
 
 ###Stateless Component
 
-Stateless components don't hold state and depend on their stateful parent component for state. The stateless component can trigger events that would cause the stateful component to update state and therefore update the stateless component. Stateless components are reusable and they aren't dependent on a specific stateful component container, but requires a container to pass props.
+Stateless components don't hold state and depend on their stateful parent component for state. The stateless component can trigger events that would cause the stateful component to update state and therefore update the stateless component. Stateless components are reusable and they aren't dependent on a specific stateful component container, but requires a container to pass props. In fact, Jason Bonta of Facebook recommended having a mock or test container called an explorer with static data for the sole purpose of testing stateless components.
 
 ###Data Flow
 
