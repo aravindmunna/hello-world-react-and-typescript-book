@@ -17,7 +17,7 @@ React is a small library with a simple API. It is not an MVC framework, but in t
 
 ##React Component
 
-A React Component is a JavaScript function that owns a section of the DOM. Components can be composed together with other components to build up a UI. Composition is achieved through a tree structure with a component parent-child hierarchy (functions in functions, components in components) modeled as a DAG. There can only be one root component, but there can be many levels of children. Each component handles its own state and rendering its part of the DOM in a UI.
+A React Component is a JavaScript function that owns a section of the DOM. Components can be composed together with other components to build up a UI. Components are like Legos for UIs. Composition is achieved through a tree structure with a component parent-child hierarchy (functions in functions, components in components) modeled as a DAG. There can only be one root component, but there can be many levels of children. Each component handles its own state and rendering its part of the DOM in a UI.
 
 ##JSX
 
@@ -78,11 +78,11 @@ In React data or state is mutable, but it is private, not shared, and managed in
 
 ###Stateful Components
 
-Stateful components manage the state for itself and its child components. A stateful component would map its state to props that are passed down to stateless components for consumption. The props don't change once set and will always be consistent with the stateful component that set them. Whenever state is updated (calling `this.setState`) the stateful component will render itself and all of its children.
+Stateful components manage the state for itself and its child components. A stateful component would map its state to props that are passed down to stateless components for consumption. The props don't change once set and will always be consistent with the stateful component that set them. Whenever state is updated (calling `this.setState`) the stateful component will render itself and all of its children. A stateful component is a container that provides data or state service to stateless components.
 
 ###Stateless Component
 
-Stateless components don't hold state and depend on their stateful parent component for state. The stateless component can trigger events that would cause the stateful component to update state and therefore update the stateless component. 
+Stateless components don't hold state and depend on their stateful parent component for state. The stateless component can trigger events that would cause the stateful component to update state and therefore update the stateless component. Stateless components are reusable and they aren't dependent on a specific stateful component container.
 
 ###Data Flow
 
