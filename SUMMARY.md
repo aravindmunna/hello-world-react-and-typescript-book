@@ -5,6 +5,7 @@
    * [IDE](IDE.md)
    * [PackageManagement](PackageManagement.md)
    * [Automation](Automation.md)
+   * TypeScript Environment
 * [React](React.md)
 * [TypeScript](TypeScript.md)
 * [TypeScript and React](TypeScriptAndReact.md)
