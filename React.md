@@ -13,7 +13,7 @@ s = state
 v = f(p,s)
 ```
 
-React is a small library with a simple API. It is not an MVC framework, but in terms of the view in MVC, React does things differently.
+React is a small library with a simple API. It is not an MVC framework, but in terms of the view in MVC React has redefined best practices for efficiently developing and rendering views. Facebook and Instagram developed React and actually use it in production on their very large scale applications and development teams, so it is hard to deny it as a viable option for applications development.
 
 ##React Component
 
