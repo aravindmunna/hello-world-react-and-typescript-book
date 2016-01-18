@@ -15,3 +15,7 @@ Model View Controller.
 ## UI
 
 User interface.
+
+## DDD
+
+Domain Driven Design
