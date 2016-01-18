@@ -4,7 +4,7 @@ There can be many dependencies that need to be managed to enable development wit
 
 If you don't have npm, you'll have to [install it (https://docs.npmjs.com/getting-started/installing-node)](https://docs.npmjs.com/getting-started/installing-node). 
 
-###Initialize NPM
+##Initialize NPM
 
 To get going with npm create a directory for your project (name isn't important). Then open a command prompt at the new directory. Now initialie npm for the project, run
 
@@ -12,11 +12,11 @@ To get going with npm create a directory for your project (name isn't important)
 
 This starts a utility to help you setup your project for npm. I usually update the description, version and author info. The utility takes that data you enter and creates a package.json file. You can think of package.json like package.config for NuGet or pom.xml for Maven. This file will have a listing of all of the dependencies for the project.
 
-###Initial Dependencies
+##Initial Dependencies
 
 We will be using a few dependencies that we will install with NPM. We are able to separate dependencies that are only needed for development from dependencies that are needed at runtime. This is useful when you want to distribute an application. User's of your app won't have to download your development dependencies if they don't need them.
 
-####Runtime Dependencies
+###Runtime Dependencies
 
 Here is a list of our initial runtime dependencies
 
@@ -30,7 +30,7 @@ To install them run
 
 `npm install --save bootstrap react react-dom react-router toastr`
 
-####Development Dependencies
+###Development Dependencies
 
 Here is a list of our development dependencies
 
