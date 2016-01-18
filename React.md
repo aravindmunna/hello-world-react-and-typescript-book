@@ -83,7 +83,8 @@ Stateful components manage the state for itself and its child components. A stat
 ```javascript
 shouldComponenUpdate(nextProps) { 
     return false; 
-    //or compare immutable props
+    //or return reference equality of immutable props
+    //return this.props === nextProps;
 }
 ```
 
