@@ -4,7 +4,7 @@
 * [Development Environment](DevelopmentEnvironment.md)
    * [IDE](IDE.md)
    * [PackageManagement](PackageManagement.md)
-   * TypeScript Environment
+   * [TypeScript Environment](TypescriptEnvironment.md)
    * [Automation](Automation.md)
 * [React](React.md)
 * [TypeScript](TypeScript.md)
