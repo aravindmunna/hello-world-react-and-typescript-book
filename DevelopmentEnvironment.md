@@ -21,7 +21,9 @@ Choosing an IDE is a religious experience so I won't start an ideological war by
 - [Visual Studio Code - code.visualstudio.com](https://code.visualstudio.com/)
 - [WebStorm - jetbrains.com/webstorm](https://www.jetbrains.com/webstorm/)
 
-I am probably missing some that others would consider popular. This is just a tip of the IDE iceberg to give some ideas on what's available. Initially, the IDE you choose is not important. I can say that I enjoy Atom, Brackets, Cloud9, Sublime and Visual Studio Code. Also, I am intrigued by Facebooks IDE Nuclide because it is based on Atom and made with React development in mind. I won't vote for one over the other because they all work. Try a few IDE's and pick one that fits your development style without having to jump through hoops to do common tasks. If your goal is to get up to speed on React and TypeScript development, don't spend too much time trying to find and configure the perfect IDE.
+I am probably missing some that others would consider popular. This is just a tip of the IDE iceberg to give some ideas on what's available. Initially, the IDE you choose is not important. I can say that I enjoy Atom, Brackets, Cloud9, Sublime and Visual Studio Code. Also, I am intrigued by Facebooks IDE Nuclide because it is based on Atom and made with React development in mind. 
+
+I won't vote for one over the other because they all work. Try a few IDE's and pick one that fits your development style without having to jump through hoops to do common tasks. If your goal is to get up to speed on React and TypeScript development, don't spend too much time trying to find and configure the perfect IDE.
 
 ##Package Management
 
