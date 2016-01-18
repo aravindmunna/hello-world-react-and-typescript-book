@@ -44,7 +44,9 @@ When you want to render a React Component use uppercase as first letter of the J
 <HelloWorldComponent displayName="Charles" />
 ```
 
-You could write your views with `React.createElement` instead of JSX, but JSX is more approachable by designers and developers that aren't comfortable with JavaScript. Also, using React components with JSX we move from writing views with imperative hard to understand HTML template logic to writing declarative functions to manage the state of components with JavaScript.
+You could write your views with `React.createElement` instead of JSX, but JSX is more approachable by designers and developers that aren't comfortable with JavaScript. 
+
+Writing React components with JSX we move from writing views with imperative hard to understand HTML template logic to writing declarative functions to manage the state of components with JavaScript. It's a win-win. Developers can write logic with a proper development language and not a wierd template abstraction and Designers still get the comfort of working with HTML like structures.
 
 ##React Component Rendering
 
