@@ -56,9 +56,13 @@ Components have a method named `setState`. You call this method any time the sta
 
 If you want to improve performance of rendering you can define `shouldComponentUpdate` to short circuit rendering on components that should not re-render based on comparison of previous and next props and state. If you use immutable data structures, like [immutable.js](https://facebook.github.io/immutable-js/), for props and state, this comparison becomes trivial since you don't have to do deep comparison of immutable objects. If `shouldComponentUpdate` returns false, the component and its sub-tree will not be re-rendered. This is very help when a child is not dependent on its parent for state.
 
-If React determines that it should render it will render a virtual DOM. React compares the virtual DOM from the previous render with the current render to decide what has been updated in the DOM. To help React efficiently compare DOM versions you can give DOM elements a `key` attribute with a value that is unique among its siblings. This makes it easier for React to compare elements. If an element is not found the element is replaced. React compares the attributes of elements to determine if there was a change. If a change was found only the attributes that have changed is updated.
+If React determines that it should render it will render a virtual DOM. React compares the virtual DOM from the previous render with the current render to decide what has been updated in the DOM. When comparing the old and new DOM React compares nodes in the DOM tree. If it finds a node that doesn't have the same element or component type, it will remove the old one including its entire sub-tree and replace it with the new one. This provides a big gain in terms of performance because React doesn't have to waste time tyring to reconcile sub-trees if the parent nodes don't match.
 
-It is much more efficient for React to update the virtual DOM made of JavaScript objects than say a browser DOM. If changes are found React will [reconcile](https://facebook.github.io/react/docs/reconciliation.html) the DOM to make the minimum number of changes to the device's DOM.
+To help React efficiently compare nodes you should assign child elements a `key` attribute with a value that is unique among its siblings elements. This makes it easier for React to compare elements. React compares the attributes of elements to determine if there was a change. If a change was found, only the attributes that have changed are updated.
+
+It is much more efficient for React to work with the virtual DOM made of JavaScript objects than say a browser DOM. You can read more about the heuristics React uses to reconcile the DOM to make the minimum number of changes to a device's DOM
+
+[https://facebook.github.io/react/docs/reconciliation.html](https://facebook.github.io/react/docs/reconciliation.html).
 
 ##React Component Props and State
 
