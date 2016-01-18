@@ -1,6 +1,6 @@
 #Development Environment
 
-The first thing we need to do is setup a development environment to enable React and TypeScript development. I am coding on a Windows laptop, but most of the steps can be done on other OS's with minor adjustments.
+The first thing we need to do is setup a development environment to enable React and TypeScript development.
 
 ##IDE
 
