@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [Development Environment](DevelopmentEnvironment.md)
+   * IDE
 * [React](React.md)
 * [TypeScript](TypeScript.md)
 * [TypeScript and React](TypeScriptAndReact.md)
