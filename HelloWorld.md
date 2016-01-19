@@ -88,11 +88,15 @@ This is a JavaScript file with a .tsx extention. The .tsx extenstion let's the T
 
 If you know JavaScript, this may not look like your mama's JavaScript. At the time I wrote this ES6 was only 6 months old and this sample is written with ES6. If you haven't been following the exciting changes in JavaScript, a lot of the syntax may be new to you.
 
+---
+
 ```javascript
 /// <reference path="../typings/tsd.d.ts" />
 ```
 
 The very top of this file is a JavaScript comment. This is actually how we define references for TypeScript typing files. This let's TypeScript know where to find the definitions for types used in the code.
+
+---
 
 ```javascript
 import * as React from 'react';
@@ -101,17 +105,23 @@ import * as DOM from 'react-dom';
 
 The `import` statements are new in JavaScript ES6. They define the modules that are used in the code.
 
+---
+
 ```javascript
 const root = document.getElementById('app');
 ```
 
 Then we have a line that starts with `const`. This is new ES6 variable declaration that says that our variable is a constant. This variable named root is just defining the HTML element we want to output our React component to.
 
+---
+
 ```javascript
 class Main extends React.Component<any, any> {
 ```
 
 Now we get into the meat of the code. We start with a class declaration, `class Main extends React.Component<any, any>`. This is also new to ES6. We are defining a JavaScript class named `Main`. We also extend our `Main` class with the class `React.Component<any, any>`. `React.Component<any, any>` is saying that we want to extend `React.Component` and allow any type to be used for the state and props objects (more on this later).
+
+---
 
 ```javascript
 constructor(props: any) {
@@ -120,6 +130,8 @@ constructor(props: any) {
 ```
 
 Next, we have contructor method that is used to initialize the class. In our sample, we only call super(props) which calls the contructor method on our parent class React.Component passing any props that were passed into our constructor. We are using TypeScript to define the props as `any` type.
+
+---
 
 ```javascript
 public render() {
@@ -133,11 +145,15 @@ Maybe the most important method in a React component is the `render` method. Thi
 
 The `render` method returns the DOM for the component. In the return statement you put your JSX. In our sample, this is just a simple div that says Hello World.
 
+---
+
 ```javascript
 DOM.render(<Main />, root); 
 ```
 
 Lastly, we call `DOM.render` and pass `Main`, the React component we just created, and `root` the node in our HTML file that we want to output to.
+
+---
 
 That's it, pretty simple and something we can easily build upon.
 
