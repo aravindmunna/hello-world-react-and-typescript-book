@@ -108,7 +108,7 @@ This is one way to prevent wasteful propagation of unnecessary renders.
 
 For clarity I would recommend naming stateful components with a "Container" suffix so that it is evident that it is a stateful component (e.g. `MyFunkyContainer`, `MyFunkyTestContainer`).
 
-###Stateless Component
+###Stateless Components
 
 Stateless components don't hold state and depend on their stateful parent component container for state. The stateless component can trigger events that would cause the stateful component to update state and therefore update the stateless component. Stateless components are reusable and they aren't dependent on a specific stateful component container, but requires a container to pass props. In fact, Jason Bonta of Facebook recommended having a mock or test container called an explorer with static data for the sole purpose of testing stateless components.
 
@@ -118,13 +118,13 @@ Another way to look at the stateful-to-stateless component relationship is in te
 
 You can enforce props to be read-only in TypeScript by using a TypeScript property with only a getter or in JavaScript ES5+ with `object.defineProperty` with `writable` set to `false`. Defining props with persisted immutable data structure, like those found in [immutable.js](https://facebook.github.io/immutable-js/) help further in enforcing immutability and helps simplify comparisons when you need to compare changes in props.
 
-###Reference Equlity: The Holy Grail
-
 ###Event Flow
 
 Events flow up the hierarchy and can be used to instruct higher components to update state (child-to-parent communication). When you have components that need to communicate that don't share a parent child relationship, you can write a global event system or even better use a pattern such as [Flux](https://facebook.github.io/flux/) to enable cross component communication.
 
 These flow rules allows us to easily visualize how data streams through our application. 
+
+##Reference Equlity: The Holy Grail
 
 ##React Component Lifecycle
 
