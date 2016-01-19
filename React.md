@@ -34,7 +34,7 @@ When you want to render HTML elements you use lowercase as first letter of JSX e
 ```html
 <div className="container">
     <label htmlFor="hello">Hello</label>
-    <input id="hello" />
+    <input type="text" id="hello" />
 </div>
 ```
 
