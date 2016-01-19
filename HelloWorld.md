@@ -84,9 +84,13 @@ class Main extends React.Component<any, any> {
 DOM.render(<Main />, root); 
 ```
 
+This is a JavaScript file with a .tsx extention. The .tsx extenstion let's the TypeScript compiler know that this file needs to be compiled to JavaScript, but for the most part this is already standard ES6 JavaScript. One of the good thing about TypeScript is I can tell it to compile this as ES5 or older JavaScript for older browsers. 
+
+If you know JavaScript, this may not look like your mama's JavaScript. At the time I wrote this ES6 was only 6 months old and this sample is written with ES6. If you haven't been following the exciting changes in JavaScript, a lot of the syntax may be new to you.
+
 The very top of this file is a JavaScript comment. This is actually how we define references for TypeScript typing files. This let's TypeScript know where to find the definitions for types used in the code.
 
-The import statements are new in JavaScript ES6. They define the modules that are used in the code.
+The `import` statements are new in JavaScript ES6. They define the modules that are used in the code.
 
 Then we have a line that starts with `const`. This is new ES6 variable declaration that says that our variable is a constant. This variable named root is just defining the HTML element we want to output our React component to.
 
