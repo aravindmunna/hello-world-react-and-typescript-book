@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+* [HelloWorld](HelloWorld.md)
 * [Development Environment](DevelopmentEnvironment.md)
    * [IDE](IDE.md)
    * [PackageManagement](PackageManagement.md)
@@ -9,7 +10,6 @@
 * [React](React.md)
 * [TypeScript](TypeScript.md)
 * [TypeScript and React](TypeScriptAndReact.md)
-* [HelloWorld](HelloWorld.md)
 * [References](References.md)
 * [Glossary](GLOSSARY.md)
 
