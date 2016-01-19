@@ -1,3 +1,3 @@
 #Development Environment
 
-The first thing we need to do is setup a development environment to enable React and TypeScript development. Actually, it isn't very different than a standard JavaScript setup, but it is important to establish a good working environment with the tools and dependencies for effective and efficient development.
+One of the first thing to do before starting a new project is setting up a development environment. It is important to establish a good working environment with the tools and dependencies for effective and efficient development. Although we want an environment for React and TypeScript development, it isn't very different than a standard JavaScript setup.
