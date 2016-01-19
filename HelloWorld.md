@@ -1,6 +1,8 @@
 #Hello World
 
-We will review a few code samples. You can download the code samples with the link provided for each sample. You can also get a copy of the repository for the samples by cloning
+We will review a few code samples. We will be using the proverbial Hello World app. I think this is a little more approachable than some of the many ToDo demos and other more real world applications. I thinks exploring Hello World is great to get you grounded before exploring more "real world" type applications. 
+
+You can download the code samples with the link provided for each sample. You can also get a copy of the repository for the samples by cloning
 
 https://github.com/charleslbryant/hello-world-react-and-typescript.git
 
