@@ -139,7 +139,7 @@ DOM.render(<Main />, root);
 
 Lastly, we call `DOM.render` and pass `Main`, the React component we just created, and `root` the node in our HTML file that we want to output to.
 
-That's it pretty simple and something we can easily build upon.
+That's it, pretty simple and something we can easily build upon.
 
 
 ##Components in Separate Files
