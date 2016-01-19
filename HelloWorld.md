@@ -31,7 +31,7 @@ To run the samples, open a console at the sample directory and run
 
 `gulp`
 
-This will kick off the default gulp task to run all the magic to compile TypeScript, bundle our dependencies and code into one bundle.js file, and move all of the files need to run the application to a dist folder, then open the index.html page in a browser.
+This will kick off the default gulp task to run all the magic to compile TypeScript, bundle our dependencies and code into one bundle.js file, and move all of the files need to run the application to a dist folder, open the index.html page in a browser, and reload the site when changes are made to source files.
 
 ##Basic React Component
 
