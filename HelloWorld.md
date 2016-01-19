@@ -111,7 +111,7 @@ The `import` statements are new in JavaScript ES6. They define the modules that 
 const root = document.getElementById('app');
 ```
 
-Then we have a line that starts with `const`. This is new ES6 variable declaration that says that our variable is a constant. This variable named root is just defining the HTML element we want to output our React component to.
+`const` is one of the new ES6 variable declaration that says that our variable is a constant or a read-only reference to a value. The `root` constant is just defining the HTML element we want to output our React component to.
 
 ---
 
@@ -119,7 +119,13 @@ Then we have a line that starts with `const`. This is new ES6 variable declarati
 class Main extends React.Component<any, any> {
 ```
 
-Now we get into the meat of the code. We start with a class declaration, `class Main extends React.Component<any, any>`. This is also new to ES6. We are defining a JavaScript class named `Main`. We also extend our `Main` class with the class `React.Component<any, any>`. `React.Component<any, any>` is saying that we want to extend `React.Component` and allow any type to be used for the state and props objects (more on this later).
+`class` is a new declaration for an un-hoisted stict mode function defined with prototype-based inheritance. That's a lot of words and if they mean nothing to you, its not important. Just knowing that `class` creates a JavaScript class is all you need to know.
+
+`Main` is the name of the class. 
+
+`extends` says that the `Main` class will be created as a child of the `React.Component<any, any>` ckass. 
+
+`React.Component<any, any>` is a part of the TypeScript typing definition for React. This is saying to create the `React.Component` and all the type `any` to be used for the components state and props objects (more on this later). `any` is a special TypeScript type that basically says allow any type to be used.
 
 ---
 
@@ -129,7 +135,7 @@ constructor(props: any) {
 }
 ```
 
-Next, we have contructor method that is used to initialize the class. In our sample, we only call super(props) which calls the contructor method on our parent class React.Component passing any props that were passed into our constructor. We are using TypeScript to define the props as `any` type.
+The `contructor method that is used to initialize the class. In our sample, we only call super(props) which calls the contructor method on our parent class React.Component passing any props that were passed into our constructor. We are using TypeScript to define the props as `any` type.
 
 ---
 
