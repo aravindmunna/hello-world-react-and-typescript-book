@@ -35,7 +35,7 @@ This will kick off the default gulp task to run all the magic to compile TypeScr
 
 ##Basic React Component
 
-Below is a very basic example of a single React component. We could make it even simpler, but this example is still basic enough to start with.
+This is a very basic example of a single React component. We could make it even simpler, but this example is still basic enough to start with.
 
 **Source Code** 
 
@@ -168,6 +168,10 @@ That's it, pretty simple and something we can easily build upon.
 
 
 ##Components in Separate Files
+
+This sample demonstrates how to split your components into multiple files. It is still just the simple display Hello World, but now it is modular and reusable.
+
+
 
 ##Manage Component State with Prop and State Objects
 
