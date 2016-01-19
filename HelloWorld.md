@@ -85,9 +85,9 @@ DOM.render(<Main />, root);
 ```
 If you know JavaScript, this may not look like your mama's JavaScript. At the time I wrote this ES6 was only 6 months old and this sample is written with ES6. If you haven't been following the exciting changes in JavaScript, a lot of the syntax may be new to you.
 
-This is a JavaScript file with a .tsx extention. The .tsx extenstion let's the TypeScript compiler know that this file needs to be compiled to JavaScript, but for the most part this is already standard ES6 JavaScript. One of the good things about TypeScript is we can write our code with ES6/7 and compile it as ES5 or older JavaScript for older browsers. 
+This is a JavaScript file with a .tsx extention. The .tsx extenstion let's the TypeScript compiler know that this file needs to be compiled to JavaScript and contains React JSX. For the most part, this is just standard ES6 JavaScript. One of the good things about TypeScript is we can write our code with ES6/7 and compile it as ES5 or older JavaScript for older browsers. 
 
-Let's break this code down line by line.
+**Let's break this code down line by line.**
 
 ---
 
