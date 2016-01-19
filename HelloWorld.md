@@ -225,8 +225,6 @@ Instead of returning the markup we are returning the HelloWorld component and de
 
 Notice how we started the component name with a uppercase letter, React expects components to start with uppercase and DOM elements to start with lowercase.
 
----
-
 ###src/helloworld.tsx
 
 ```
@@ -247,11 +245,9 @@ export default class HelloWorld extends React.Component<any, any> {
 }
 ```
 
-If you paid attention to the previous sample you will notice that this is almost exactly like the old main.tsx. We gave the component class a new name and we don't need to import DOM because we don't need to call anything from React.DOM.
+If you paid attention to the previous sample you will notice that this is almost exactly like the old main.tsx. We copied main.tsx to a new file called helloworld.tsx. We gave the component class a new name and we deleted the import for DOM. We don't need to import DOM because we don't need to call anything from React.DOM.
 
----
-
-That was easy too.
+That was pretty easy so I don't think that we need to review this code.
 
 ##Manage Component State with Prop and State Objects
 
