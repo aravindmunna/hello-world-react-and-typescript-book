@@ -90,7 +90,11 @@ In React data or state is mutable, but it is private, not shared, and managed in
 
 ###Stateful Components
 
-Stateful components manage the state for itself and its child components. A stateful component would map its state to props that are passed down to stateless components for consumption. The props don't change once set and will always be consistent with the stateful component that set them. Whenever state is updated (calling `this.setState`) the stateful component will render itself and all of its children. If we followed DDD, every bounded context would have a container that would be like an aggregate for its child components. A stateful component is a container that provides data or state service to stateless components. It should handle events triggered by its children. Ideally, this container wouldn't have props and would be able to compose its state on all its own, independent of its parent and ancestors. Also, the container should be detached from its parent in terms of rendering. Be careful about re-render when a parent re-renders, 
+A stateful component is a container that provides data or state service to stateless components. They manage the state for itself and its child components. If we compare it to DDD, a stateful component would be like an aggregate for a bounded context. 
+
+A stateful component maps its state to props that are passed down to stateless components for consumption. The props are immutable and don't change once set and will always be consistent with the stateful component that set them. Whenever state is updated (calling `this.setState`) the stateful component will render itself and all of its children, so children stay consistent across re-renders. 
+
+A stateful component should handle events triggered by its children. Ideally, stateful component wouldn't have props and would be able to compose its state on all its own, independent of any parent or ancestors. It should be detached from its parent in terms of rendering. It should only re-render when it has new state, not when it's parent re-renders. It could possible use the `shouldComponentUpdate` to prevent re-rendering by parent.
 
 ```javascript
 shouldComponenUpdate(nextProps) { 
@@ -100,9 +104,9 @@ shouldComponenUpdate(nextProps) {
 }
 ```
 
-We don't want wasteful propagation of unnecessary renders.
+This is one way to prevent wasteful propagation of unnecessary renders.
 
-For clarity I would recommend naming this component with a Container prefix so that it is evident that it is a stateful component (e.g. `MyFunkyContainer`, `MyFunkyTestContainer`).
+For clarity I would recommend naming stateful components with a "Container" suffix so that it is evident that it is a stateful component (e.g. `MyFunkyContainer`, `MyFunkyTestContainer`).
 
 ###Stateless Component
 
