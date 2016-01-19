@@ -103,7 +103,7 @@ import * as React from 'react';
 import * as DOM from 'react-dom';
 ```
 
-The `import` statements are new in JavaScript ES6. They define the modules that are used in the code.
+The `import` statements are new in JavaScript ES6. They define the modules that need to be imported so they can be used in the code.
 
 ---
 
