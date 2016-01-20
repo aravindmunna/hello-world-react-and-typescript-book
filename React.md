@@ -58,7 +58,7 @@ Writing React components with JSX we move from writing views with imperative, ha
 
 One of the great benefits of using React is the speed at which it can update the DOM. Speed is a core value of the team that develops React. They achieved speed by relying on a virtual representation of the DOM and some clever algorithms that allows React to make changes to the DOM faster than traditional view engines.
 
-Rendering of React components start when you call `ReactDOM.render` or `setState` methods. These methods kick of a process called [reconciliation (http://facebook.github.io/react/docs/reconciliation.html)](http://facebook.github.io/react/docs/reconciliation.html). Reconciliation is the process that React uses to efficiently render views.
+Rendering of React components start when you call `ReactDOM.render` or `setState` methods. These methods kick of a process called [reconciliation (http://facebook.github.io/react/docs/reconciliation.html)](http://facebook.github.io/react/docs/reconciliation.html). Reconciliation is the process that React uses to collect the minimum amount of changes to efficiently render views.
 
 You call `setState` any time the state for the component is updated. `setState` will mark the component as dirty to help React optimize what actually needs to be re-rendered. When a component is marked for rendering the children in its sub-tree will also be rendered. At the end of each event loop React will call render on all of the components that have been marked dirty by `setState`. This means that during a single cycle React can render multiple components in one batch.
 
