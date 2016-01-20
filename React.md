@@ -139,7 +139,7 @@ const DeleteAccount = ({message, color, children}) => (
 );
 ```
 
-Here we are creating an element named DeleteAccount with a simple JavaScript arrow function. This can be composed in a parent component where the parent would pass the props that are needed by the element (e.g. message and color in the example). This cuts down on code of a full component class when you don't need to use state, lifecycle events, and other React component class features. 
+Here we are creating an element named DeleteAccount with a simple JavaScript arrow function. This can be composed in a parent component where the parent would pass the props that are needed by the element (e.g. string message and color and child elements in the example). This cuts down on code of a full component class when you don't need to use state, lifecycle events, and other React component class features. 
 
 Jason Bonta of Facebook recommended an interesting test harness for stateless components. You just build a mock or test container called an "explorer" with static data that can be passed to stateless components for the  purpose of testing. This sounds like a way to cut down on difficult WebDriver tests to me.
 
