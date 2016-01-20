@@ -7,7 +7,7 @@
    * [2 - Components in Separate Files](2ComponentsInSeparateFiles.md)
 * [Development Environment](DevelopmentEnvironment.md)
    * [IDE](IDE.md)
-   * [PackageManagement](PackageManagement.md)
+   * [Package Management](PackageManagement.md)
    * [TypeScript Environment](TypescriptEnvironment.md)
    * [Automation](Automation.md)
 * [React](React.md)
