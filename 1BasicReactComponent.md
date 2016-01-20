@@ -4,7 +4,7 @@ This is a very basic example of a single React component. We could make it even 
 
 **Source Code** 
 
-https://github.com/charleslbryant/hello-world-react-and-typescript/releases/tag/0.0.2
+https://github.com/charleslbryant/hello-react-and-typescript/releases/tag/0.0.2
 
 ##src/index.html
 
