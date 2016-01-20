@@ -6,7 +6,7 @@ The HTML is still exactly the same as sample #1.
 
 ##src/main.tsx
 
-We will only highlight and explore the two changes to the main.tsx file.
+We only have two changes to explore the main.tsx file.
 
 ```javascript
 /// <reference path="../typings/tsd.d.ts" />
@@ -40,9 +40,9 @@ Let's look at the differences.
 import HelloWorld from './helloworld';
 ```
 
-We added a new import to import the HelloWorld component. You will notice that this import is a little different. Before we only imported external modules. TypeScript knows to look in the node_moduels folder for these modules (you can define other locations, but we won't go into that here).
+We added a new import to import the HelloWorld component. You will notice that this import is a little different. Before we only imported external modules. TypeScript knows to look in the node_moduels folder for these modules so we only needed to include the name of the module. You can define other locations for external modules, but we won't go into that here.
 
-With our new custom internal module, we need to tell TypeScript where it is located. That's why we have a relative path to the module as the `from` value.
+With our new custom internal module, we need to tell TypeScript where it is located. That's why we have a relative path to the module as the `from` value. We can also get around this and define the location for our internal modules, but this is straight forward for this little sample.
 
 ---
 
@@ -52,9 +52,20 @@ return (
 );
 ```
 
-Instead of returning the markup we are returning the HelloWorld component and delegating the rendering of the markup to the component. Now, we can add `<HelloWorld />` multiple times and only have to change it in one place. We have a single point of truth for what the markup for Hello World should be and we can reuse it.
+Instead of returning the markup directly, we are returning the HelloWorld component and delegating the rendering of the markup to this new component. By having the markup in a separate component we can add `<HelloWorld />` multiple times and only have to change it in one place. We have a single point of truth for what the markup for Hello World should be and we can reuse it.
 
-Notice how we started the component name with a uppercase letter, React expects components to start with uppercase and DOM elements to start with lowercase.
+One point to make is that a React component needs to have only one root element. If we were to add more markup or components here we would have to wrap it in a parent element. Example
+
+```
+return (
+    <div>
+        <HelloWorld />
+        <HelloWorld />
+    </div>
+);
+```
+
+This would display "Hello World" twice. Notice how we started the component name with a uppercase letter, React expects components to start with uppercase and DOM elements to start with lowercase.
 
 ##src/helloworld.tsx
 
