@@ -4,7 +4,7 @@
 * [HelloWorld](HelloWorld.md)
    * [Setting Up Samples](SettingUpSamples.md)
    * [2 - Component Basics](ComponentBasic.md)
-   * [3 - Components in Separate Files](2ComponentsInSeparateFiles.md)
+   * [3 - Components in Separate Files](ComponentsInSeparateFiles.md)
    * [4 - Component Props and State](3ComponentPropsAndState.md)
    * [5 - Component Interactivity](4ComponentInteractivity.md)
 * [Development Environment](DevelopmentEnvironment.md)
