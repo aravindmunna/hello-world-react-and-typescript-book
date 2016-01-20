@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [HelloWorld](HelloWorld.md)
    * [Setting Up Samples](SettingUpSamples.md)
-   * 1. Basic React Component
+   * [1] Basic React Component
 * [Development Environment](DevelopmentEnvironment.md)
    * [IDE](IDE.md)
    * [PackageManagement](PackageManagement.md)
