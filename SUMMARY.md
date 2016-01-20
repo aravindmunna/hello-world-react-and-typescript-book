@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [HelloWorld](HelloWorld.md)
    * [Setting Up Samples](SettingUpSamples.md)
-   * [2 - Basic React Component](1BasicReactComponent.md)
+   * [2 - Basic React Component](BasicReactComponent.md)
    * [3 - Components in Separate Files](2ComponentsInSeparateFiles.md)
    * [4 - Component Props and State](3ComponentPropsAndState.md)
    * [5 - Component Interactivity](4ComponentInteractivity.md)
