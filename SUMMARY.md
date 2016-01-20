@@ -6,7 +6,7 @@
    * [2 - Component Basics](Samples/ComponentBasic.md)
    * [3 - Components in Separate Files](Samples/ComponentsInSeparateFiles.md)
    * [4 - Component Props and State](Samples/ComponentPropsAndState.md)
-   * [5 - Component Interactivity](ComponentInteractivity.md)
+   * [5 - Component Interactivity](Samples/ComponentInteractivity.md)
 * [Development Environment](DevelopmentEnvironment.md)
    * [IDE](IDE.md)
    * [Package Management](PackageManagement.md)
