@@ -2,8 +2,6 @@
 
 This sample gives an basic example of using props and state in your components.
 
-The HTML is still exactly the same as sample #1. 
-
 ##src/main.tsx
 
 ```javascript
