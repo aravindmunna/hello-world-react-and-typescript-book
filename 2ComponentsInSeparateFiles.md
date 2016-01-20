@@ -54,7 +54,9 @@ return (
 
 Instead of returning the markup directly, we are returning the HelloWorld component and delegating the rendering of the markup to this new component. By having the markup in a separate component we can add `<HelloWorld />` multiple times and only have to change it in one place. We have a single point of truth for what the markup for Hello World should be and we can reuse it.
 
-One point to make is that a React component needs to have only one root element. If we were to add more markup or components here we would have to wrap it in a parent element. Example
+To use external components they have to be in scope, which is why we imported it. Another point to make is that a React component needs to have only one root element. If we were to add more markup or components here, we would have to wrap it in a parent element. 
+
+Example:
 
 ```
 return (
@@ -65,7 +67,7 @@ return (
 );
 ```
 
-This would display "Hello World" twice. Notice how we started the component name with a uppercase letter, React expects components to start with uppercase and DOM elements to start with lowercase.
+This would display "Hello World" twice. Notice how we started the component name with an uppercase letter, React expects components to start with uppercase and DOM elements to start with lowercase.
 
 ##src/helloworld.tsx
 
