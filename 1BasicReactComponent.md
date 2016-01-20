@@ -117,6 +117,16 @@ public render() {
 
 Maybe the most important method in a React component is the `render` method. This is where the DOM for our component is defined. In our sample we are using JSX. We will talk about JSX later, just understand that it is like HTML and outputs JavaScript. 
 
+JSX is not a requirement. You could use plain JavaScript. We can rewrite this section of code as
+
+```javascript
+public render() {
+	return (
+		React.createElement("div", null, "Hello World")
+	);
+}
+```
+
 The `render` method returns the DOM for the component. After the `return` statement you put your JSX. In our sample, this is just a simple div that says Hello World. It is good practice to wrap your return expression in parenthesis.
 
 ---
