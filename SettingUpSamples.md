@@ -2,12 +2,12 @@
 
 ##Requirements
 
-The code samples have a couple requirements
+All of the code samples have a couple requirements
 
 - npm package manager (Node 5.2.0 used in development)
 - IE 10+ or similar modern browser that supports the History API
 
-The first sample is the source for the basic development environment. This includes the packages and automation that will be used in the samples. 
+This first sample is the source for the basic development environment. This includes the packages and automation that will be used in the samples. 
 
 ***Note** - to get the latest version of packages and automation you should clone the repository from root, https://github.com/charleslbryant/hello-react-and-typescript.git . We will make updates as we move along with new samples so version 0.0.1 is only a starting point.*
 
