@@ -4,7 +4,7 @@
 
 *Pete Hunt - http://facebook.github.io/react/blog/2013/06/05/why-react.html*
 
-Tom Occhino and Jordan WalkeReact announced React as an open source project at JSConfUS 2013 - https://www.youtube.com/watch?v=GW0rj4sNH2w. Pete Hunt followed up in a talk he gave at JSConfEU. There were a lot of nay sayers as a result of the announcement and Pete titled his talk after a sarcastic Twitter post, React: Rethink Best Practices. It's a decent talk that goes into the design decisions behind React and gives solid reasons for using it - https://www.youtube.com/watch?v=x7cQ3mrcKaY.
+Tom Occhino and Jordan WalkeReact announced React as an open source project at JSConfUS 2013 - https://www.youtube.com/watch?v=GW0rj4sNH2w. Pete Hunt followed up in a talk he gave at JSConfEU and JSConfAsia. There were a lot of nay sayers as a result of the announcement and Pete titled his talk after a sarcastic Twitter post, React: Rethink Best Practices. It's a decent talk that goes into the design decisions behind React and gives solid reasons for using it - https://www.youtube.com/watch?v=DgVS-zXgMTk&feature=iv&src_vid=x7cQ3mrcKaY&annotation_id=annotation_3048311263.
 
 For you functional minded folks, another way to think of React is as a way of writing declarative views where a view is a function of data defined in terms of the state of data in some point in time. 
 
@@ -15,9 +15,11 @@ s = state
 v = f(p,s)
 ```
 
-React is a small library with a simple API. It is not an MVC framework. You can think of React as the view in MVC and React has delivered on redefining best practices for efficiently developing and rendering views. 
+React is a small library with a simple API. It is not an MVC framework. You can think of React as the view in MVC. It just renders views and responds to events.  
 
 Facebook and Instagram developed React and actually use it in production on their very large scale applications and development teams. Netflix is using React to render UIs on televisions. You can write isomorphic applications by rendering views on both the client and server with the same JavaScript code. With the announcement of React Native we have the ability to render views on on any device (IOS, Android...). Its hard to deny React as a viable option for application development.
+
+React has delivered on redefining best practices for efficiently developing and rendering views.
 
 ##React Component
 
