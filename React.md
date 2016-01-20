@@ -129,11 +129,12 @@ It may be benefitial to code stateless components as React elements.
 Element Example
 
 ```
-const DeleteAccount = ({message, color}) => (
+const DeleteAccount = ({message, color, children}) => (
   <div>
     <p>Are you sure?</p>
     <DangerButton>{message}</DangerButton>
     <Button color='{color}'>Cancel</Button>
+    {Children}
   </div>
 );
 ```
