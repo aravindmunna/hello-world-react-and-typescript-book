@@ -13,7 +13,6 @@
    * [TypeScript Environment](TypescriptEnvironment.md)
    * [Automation](Automation.md)
 * [React](React.md)
-   * [Context Binding](ContextBinding.md)
 * [TypeScript](TypeScript.md)
 * [TypeScript and React](TypeScriptAndReact.md)
 * [References](References.md)
