@@ -6,7 +6,7 @@
    * [1 - Basic React Component](1BasicReactComponent.md)
    * [2 - Components in Separate Files](2ComponentsInSeparateFiles.md)
    * [3 - Component Props and State](3ComponentPropsAndState.md)
-   * 4 - Component Interactivity
+   * [4 - Component Interactivity](4ComponentInteractivity.md)
 * [Development Environment](DevelopmentEnvironment.md)
    * [IDE](IDE.md)
    * [Package Management](PackageManagement.md)
