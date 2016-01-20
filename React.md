@@ -17,7 +17,7 @@ v = f(p,s)
 
 React is a small library with a simple API. It is not an MVC framework. You can think of React as the view in MVC. It just renders views and responds to events.  
 
-Facebook and Instagram developed React and actually use it in production on their very large scale applications and development teams. Netflix is using React to render UIs on televisions. You can write isomorphic applications by rendering views on both the client and server with the same JavaScript code. With the announcement of React Native we have the ability to render views on on any device (IOS, Android...). Its hard to deny React as a viable option for application development.
+Facebook and Instagram developed React and actually use it in production on their very large scale applications and development teams. Netflix is using React to render UIs on televisions. You can write isomorphic applications by rendering views on both the client and server with the same JavaScript code. With the announcement of React Native we have the ability to render views on any device (IOS, Android...). Its hard to deny React as a viable option for application development.
 
 React has delivered on redefining best practices for efficiently developing and rendering views.
 
