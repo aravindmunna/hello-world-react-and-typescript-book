@@ -6,8 +6,6 @@ The HTML is still exactly the same as sample #1.
 
 ##src/main.tsx
 
-The change to main.tsx is minor.
-
 ```javascript
 /// <reference path="../typings/tsd.d.ts" />
 
@@ -34,7 +32,7 @@ class Main extends React.Component<any, any> {
 DOM.render(<Main />, root);  
 ```
 
-Here is the one change.
+The change to main.tsx is minor. Here is the one change.
 
 ---
 
@@ -46,7 +44,7 @@ return (
 );
 ```
 
-We are just passing `defaultName` to the `HelloWorld` component. This is doing exactly what you think it is, its setting the default value for who we are saying Hello to.
+We are just passing `defaultName` to the `HelloWorld` component. This is doing exactly what you think it is, its setting the default value for who we are saying Hello to. Notice that this name is explicit in defining this input. It is a default value, the HelloWorld component can change this value and the assumption is that it may be changed.
 
 ##src/helloworld.tsx
 
