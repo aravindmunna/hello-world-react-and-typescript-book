@@ -4,7 +4,7 @@ This sample gives an basic example of using props and state in your components.
 
 **Source Code** 
 
-https://github.com/charleslbryant/hello-world-react-and-typescript/releases/tag/0.0.4
+https://github.com/charleslbryant/hello-react-and-typescript/releases/tag/0.0.4
 
 ##src/main.tsx
 
