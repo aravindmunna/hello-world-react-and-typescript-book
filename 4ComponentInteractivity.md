@@ -48,6 +48,11 @@ public handleOnClick(event: any) : void {
 }
 ```
 
+This is a new method to handle the click event. We expect callers of this method to send the event as an argument so we defined the argument as type `any` so we can accept any event. We could define a specific or generic event type and restrict the argument to that type. We also define the method as returning `void` or nothing.
+
+In the method we are calling `this.setState` and updating the value of `name`. When we call `this.setState` it causes the component to re-render with the new state.
+
+---
 
 ```
 return (
@@ -61,6 +66,7 @@ return (
 );
 ```
 
+We are adding a new HTML element, button (remember that HTML elements start with lowercase letter). The interesting bit is that we are binding the element's `onClick` event to the `handleOnClick` method. We are using the new ES6 arrow function expression to simplify function context binding.
 
 
 
