@@ -118,7 +118,29 @@ For clarity I would recommend naming stateful components with a "Container" suff
 
 ###Stateless Components
 
-Stateless components don't hold state and depend on their stateful parent component container for state. The stateless component can trigger events that would cause the stateful component to update state and therefore update the stateless component. Stateless components are reusable and they aren't dependent on a specific stateful component container, but requires a container to pass props. In fact, Jason Bonta of Facebook recommended having a mock or test container called an explorer with static data for the sole purpose of testing stateless components.
+Stateless components don't hold state and depend on their stateful parent component container for state. The stateless component can trigger events that would cause the stateful component to update state and therefore update the stateless component. Stateless components are reusable and they aren't dependent on a specific stateful component container, but requires a parent container to pass props. 
+
+It may be benefitial to code stateless components as React elements. 
+
+*An element is a plain object describing what you want to appear on the screen in terms of the DOM nodes or other components. Elements can contain other elements in their props. Creating a React element is cheap. Once an element is created, it is never mutated.*
+
+*Dan Abramov - http://facebook.github.io/react/blog/2015/12/18/react-components-elements-and-instances.html*
+
+Element Example
+
+```
+const DeleteAccount = ({message, color}) => (
+  <div>
+    <p>Are you sure?</p>
+    <DangerButton>{message}</DangerButton>
+    <Button color='{color}'>Cancel</Button>
+  </div>
+);
+```
+
+Here we are creating an element named DeleteAccount with a simple JavaScript arrow function. This can be composed in a parent component where the parent would pass the props that are needed by the element (e.g. message and color in the example). This cuts down on code of a full component class when you don't need to use state, lifecycle events, and other React component class features. 
+
+Jason Bonta of Facebook recommended an interesting test harness for stateless components. You just build a mock or test container called an "explorer" with static data that can be passed to stateless components for the  purpose of testing. This sounds like a way to cut down on difficult WebDriver tests to me.
 
 ###Data Flow
 
