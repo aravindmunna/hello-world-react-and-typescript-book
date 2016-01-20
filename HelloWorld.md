@@ -10,8 +10,6 @@ You can download the code samples with the link provided for each sample. You ca
 
 https://github.com/charleslbryant/hello-world-react-and-typescript.git
 
-##Manage Component State with Prop and State Objects
-
 ##Handle Events
 
 ##Accept User Input
