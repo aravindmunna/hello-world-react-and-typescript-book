@@ -1,6 +1,10 @@
-# 3 - Component Props and State
+# 4 - Component Props and State
 
 This sample gives an basic example of using props and state in your components.
+
+**Source Code** 
+
+https://github.com/charleslbryant/hello-world-react-and-typescript/releases/tag/0.0.4
 
 ##src/main.tsx
 
