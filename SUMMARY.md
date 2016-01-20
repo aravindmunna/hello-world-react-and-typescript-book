@@ -5,7 +5,7 @@
    * [Setting Up Samples](SettingUpSamples.md)
    * [1 - Basic React Component](1BasicReactComponent.md)
    * [2 - Components in Separate Files](2ComponentsInSeparateFiles.md)
-   * 3 - Component Props and State
+   * [3 - Component Props and State](3ComponentPropsAndState.md)
 * [Development Environment](DevelopmentEnvironment.md)
    * [IDE](IDE.md)
    * [Package Management](PackageManagement.md)
