@@ -2,7 +2,7 @@
 
 This sample demonstrates how to split your components into multiple files. It is still just the simple display Hello World, but now it is modular and reusable.
 
-The HTML is still exactly the same as sample #1. 
+The HTML is still exactly the same as sample #2. 
 
 ##src/main.tsx
 
