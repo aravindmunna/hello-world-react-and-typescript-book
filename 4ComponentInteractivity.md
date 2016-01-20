@@ -1,6 +1,10 @@
-# 4 - Component Interactivity
+# 5 - Component Interactivity
 
 This sample gives an basic example of using adding interactivity to a component.
+
+**Source Code** 
+
+https://github.com/charleslbryant/hello-react-and-typescript/releases/tag/0.0.5
 
 ##src/helloworld.tsx
 
