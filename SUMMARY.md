@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [HelloWorld](HelloWorld.md)
-   * [Setting Up Samples](SettingUpSamples.md)
+   * [1 - Setting Up Samples](SettingUpSamples.md)
    * [2 - Component Basics](Samples/ComponentBasic.md)
    * [3 - Components in Separate Files](Samples/ComponentsInSeparateFiles.md)
    * [4 - Component Props and State](Samples/ComponentPropsAndState.md)
