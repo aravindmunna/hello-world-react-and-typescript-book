@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [HelloWorld](HelloWorld.md)
+   * Setting Up Samples
 * [Development Environment](DevelopmentEnvironment.md)
    * [IDE](IDE.md)
    * [PackageManagement](PackageManagement.md)
