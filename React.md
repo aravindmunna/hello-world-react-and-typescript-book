@@ -31,7 +31,7 @@ Composition is achieved through a tree structure with a component parent-child h
 
 React doesn't have a template system, but you can use markup that feels like HTML by using JSX. JSX is an extension of JavaScript that allows you to use XML like constructs in your components to define your view structure. 
 
-JSX is not a template it is a high level representation of the DOM that must be transformed before it is used. When you use a JSX transformer, like Babel or TypeScipt, JSX elements are transformed to plain JavaScript `React.createElement` methods. 
+JSX is not a template it is a high level abstraction of the DOM. JSX must be transformed before it is used. When you use a JSX transformer, with tools like Babel or TypeScipt compiler, JSX elements are transformed to plain JavaScript `React.createElement` methods. 
 
 There are some difference from HTML that you have to watch out for while writing JSX. You can't use JavaScript keywords. For instance, instead of defining a CSS `class` attribute on your JSX element you use `className`. Instead of using `for` to relate a label with an element you use `htmlFor`.
 
@@ -52,7 +52,7 @@ When you want to render a React Component use uppercase as first letter of the J
 
 You could write your views with `React.createElement` instead of JSX, but JSX is more approachable by designers and developers that aren't comfortable with JavaScript. 
 
-Writing React components with JSX we move from writing views with imperative hard to understand HTML template logic to writing declarative functions to manage the state of components with JavaScript. It's a win-win. Developers can write logic with a proper development language and not a wierd template abstraction and Designers still get the comfort of working with HTML like structures.
+Writing React components with JSX we move from writing views with imperative, hard to understand, underpowered HTML template logic to writing declarative, highly expressive functions to manage the state of components with JavaScript. It's a win-win. Developers can write logic with a proper development language and not a weird restrictive template abstraction and Designers still get the comfort of working with HTML like structures.
 
 ##React Component Rendering
 
