@@ -4,7 +4,7 @@ This sample demonstrates how to split your components into multiple files. It is
 
 **Source Code** 
 
-https://github.com/charleslbryant/hello-world-react-and-typescript/releases/tag/0.0.3
+https://github.com/charleslbryant/hello-react-and-typescript/releases/tag/0.0.3
 
 The HTML is still exactly the same as sample #2. 
 
