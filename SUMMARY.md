@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [HelloWorld](HelloWorld.md)
+* [Hello World Sample Code](HelloWorld.md)
    * [1 - Setting Up Samples](SettingUpSamples.md)
    * [2 - Component Basics](Samples/ComponentBasic.md)
    * [3 - Components in Separate Files](Samples/ComponentsInSeparateFiles.md)
