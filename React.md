@@ -23,7 +23,7 @@ I think React has delivered on redefining best practices for efficiently develop
 
 ##React Component
 
-A React Component is a JavaScript function that owns a section of the DOM. Components can be composed together with other components to build up a UI. Components are like Legos for UIs. When you keep them small and focused on a specific consern it becomes easy to reuse them and repurpose them to build UIs to solve various problems.
+A React Component is a JavaScript function that owns a section of the DOM. Components can be composed together with other components to build up a UI. If you build components properly they become like Legos for UIs. Small, focused on a specific concern, easy to reuse and repurpose them to build UIs to solve various problems.
 
 Composition is achieved through a tree structure with a component parent-child hierarchy. You can think of compositions as functions in functions or components in components with the hierarchy modeled as a DAG. There can only be one root component, but there can be many levels of children. Each component handles its own state and rendering its part of the DOM in a UI.
 
