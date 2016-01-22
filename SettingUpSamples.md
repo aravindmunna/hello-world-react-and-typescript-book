@@ -1,4 +1,4 @@
-# 1 - Setting Up Samples
+#Setting Up Samples
 
 ##Requirements
 
