@@ -51,7 +51,7 @@ public handleOnChange(event: any) : void {
 }
 ```
 
-This is a new method to handle the onChange event. In the method we are calling `this.setState` and updating the value of `name` to the value of the target element passed in the event.
+This is a new method to handle the onChange event. In the method we are calling `this.setState` and updating the value of `name` in `this.state` to the value of the target element passed in the event.
 
 ---
 
