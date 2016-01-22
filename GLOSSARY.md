@@ -4,6 +4,10 @@
 
 [Directed acyclic graph - https://en.wikipedia.org/wiki/Directed_acyclic_graph](https://en.wikipedia.org/wiki/Directed_acyclic_graph)
 
+## DDD
+
+Domain Driven Design
+
 ## DOM
 
 Document object model.
@@ -16,6 +20,6 @@ Model View Controller.
 
 User interface.
 
-## DDD
+## UDF
 
-Domain Driven Design
+Unidirectional Data Flow
