@@ -1,5 +1,9 @@
 # Glossary
 
+## CQRS
+
+Command Query Responsibility Segregation
+
 ## DAG
 
 [Directed acyclic graph - https://en.wikipedia.org/wiki/Directed_acyclic_graph](https://en.wikipedia.org/wiki/Directed_acyclic_graph)
@@ -23,7 +27,3 @@ Unidirectional Data Flow
 ## UI
 
 User interface.
-
-## CQRS
-
-Command Query Responsibility Segregation
