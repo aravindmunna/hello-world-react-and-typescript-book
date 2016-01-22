@@ -1,7 +1,7 @@
 Hello React and TypeScript
 =======
 
-The purpose of this guide is to share my steps to setup a web project with React and TypeScript. I have ran through many demos, tutorials, and videos on React and TypeScript separately. Yet, finding up to date info on writing React apps with TypeScript was hard to do at the time I wrote this.
+The purpose of this book is to share my steps to setup a web project with React and TypeScript. I have ran through many demos, tutorials, and videos on React and TypeScript separately. Yet, finding up to date info on writing React apps with TypeScript was hard to do at the time I wrote this.
 
 When I started this book my main focus was on sharing my experience in establishing a development environment and dealing with some of the quirks with coding React apps with TypeScript. I thought that I wouldn't explore many of the concepts in React or TypeScript, but as I learned more I decided to write about them. The book won't provide a deep inspection of all things React or TypeScript, but I will go deeper than just a simple Hello World. 
 
