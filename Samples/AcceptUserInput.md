@@ -28,7 +28,6 @@ export default class HelloWorld extends React.Component<any, any> {
             <div>
                 <div>
                     <input 
-                        value={ this.props.name }
                         onChange={ e => this.handleOnChange(e) }
                     />
                 </div>
