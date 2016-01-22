@@ -6,7 +6,7 @@
    * [Component Basics](Samples/ComponentBasic.md)
    * [Components in Separate Files](Samples/ComponentsInSeparateFiles.md)
    * [Component Props and State](Samples/ComponentPropsAndState.md)
-   * [5 - Component Interactivity](Samples/ComponentInteractivity.md)
+   * [Component Interactivity](Samples/ComponentInteractivity.md)
    * [6 - Accept User Input](Samples/AcceptUserInput.md)
    * [7 - Component Composition](Samples/ComponentComposition.md)
 * [Development Environment](DevelopmentEnvironment.md)
