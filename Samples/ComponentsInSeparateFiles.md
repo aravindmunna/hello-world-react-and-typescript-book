@@ -1,4 +1,4 @@
-# 3 - Components in Separate Files
+#Components in Separate Files
 
 This sample demonstrates how to split your components into multiple files. It is still just the simple display Hello World, but now it is modular and reusable.
 
