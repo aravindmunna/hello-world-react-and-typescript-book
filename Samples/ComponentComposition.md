@@ -1,4 +1,4 @@
-# 7 - Component Composition
+Component Composition
 
 Coming Soon!
 
