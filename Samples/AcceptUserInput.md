@@ -41,7 +41,7 @@ export default class HelloWorld extends React.Component<any, any> {
 
 ```
 
-The significant changes here are we removed the button and handleOnClick method. We also added a text box and a handleOnChange method to handle changes as a user adds input to the text box.
+The significant changes here are we removed the button and `handleOnClick` method. We also added a text box and a `handleOnChange` method to handle changes as a user adds input to the text box.
 
 ----
 
