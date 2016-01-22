@@ -7,6 +7,7 @@
    * [3 - Components in Separate Files](Samples/ComponentsInSeparateFiles.md)
    * [4 - Component Props and State](Samples/ComponentPropsAndState.md)
    * [5 - Component Interactivity](Samples/ComponentInteractivity.md)
+   * 6 - Accept User Input
 * [Development Environment](DevelopmentEnvironment.md)
    * [IDE](IDE.md)
    * [Package Management](PackageManagement.md)
