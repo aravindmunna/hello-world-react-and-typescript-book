@@ -82,6 +82,8 @@ With these changes we have implemented a unidirectional data flow.
 2. The `onChange` event is handled by the `handleOnChange` method.
 3. The `handleOnChange` method updates the value of `name` in `this.state` and triggers a re-render of the component with `this.setState`.
 4. `this.setState` ends in a call to the `render` method that updates the name in our "Hello" message. 
+ 
+State is only changes as the result of an event. The Hello message is no bound to an external model state and can only be updated as a result of an event being triggered by user input. This is different than two way binding or bi-directional data flow where changes in a model can also update the state of a view.
 
 ### Unidirectional Data Flow (UDF)
 
@@ -89,7 +91,9 @@ event > event handler > state > render
 
 Components are representations of the state of a view over time. As events are triggered over time they update state and re-render the component with the new state. The flow can be seen as a stream of events that flow in one direction that eventually update component state causing a component to re-render. If you know about CQRS, event streaming, or stream processing, there are similar concepts in each. UDF is a redundant theme in learning React, hence a redundant theme in this book.
 
-The sample is a simple naive example because we aren't dealing with external or persisted data. The scope of the example makes it a little hard to understand UDF. If you are having trouble understanding, when you learn about Flux it will makes more sense. The Flux architecture helps you visualize data flow in a circular one way round trip. Even though it may be hard to see UDF within the context of a single controller the same event flow is used to accomplish UDF in React whether within a single component, a Flux architecture, or using Relay (another Facebook library). 
+The sample is a simple naive example because we aren't dealing with external or persisted data. The scope of the example makes it a little hard to understand UDF. In the example we don't have to worry about updating an external store.
+
+If you are having trouble understanding UDF, when you learn about Flux it will makes more sense. The Flux architecture helps you visualize data flow in a circular one way round trip. Even though it may be hard to see UDF within the context of a single component the same event flow is used to accomplish UDF in React whether within a single component, a Flux architecture, or using Relay (another Facebook library). When you get into Flux or other data flow patterns or libraries, UDF will be expanded to add additional concepts into the data flow.
 
 ### UDF vs Bi-directional Data Flow
 
