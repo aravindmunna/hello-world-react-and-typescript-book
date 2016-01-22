@@ -1,4 +1,4 @@
-# 2 - Basic React Component
+#Basic React Component
 
 This is a very basic example of a single React component. We could make it even simpler, but this example is still basic enough to start with.
 
