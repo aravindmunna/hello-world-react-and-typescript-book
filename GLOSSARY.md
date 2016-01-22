@@ -16,10 +16,14 @@ Document object model.
 
 Model View Controller.
 
+## UDF
+
+Unidirectional Data Flow
+
 ## UI
 
 User interface.
 
-## UDF
+## CQRS
 
-Unidirectional Data Flow
+Command Query Responsibility Segregation
