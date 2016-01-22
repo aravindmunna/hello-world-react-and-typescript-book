@@ -1,4 +1,4 @@
-# 6 - Accept User Input
+Accept User Input
 
 This sample gives an basic example of accepting user input.
 
