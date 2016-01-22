@@ -1,4 +1,4 @@
-# 4 - Component Props and State
+#Component Props and State
 
 This sample gives an basic example of using props and state in your components.
 
