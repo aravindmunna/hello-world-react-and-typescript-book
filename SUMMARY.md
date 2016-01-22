@@ -8,7 +8,7 @@
    * [Component Props and State](Samples/ComponentPropsAndState.md)
    * [Component Interactivity](Samples/ComponentInteractivity.md)
    * [Accept User Input](Samples/AcceptUserInput.md)
-   * [7 - Component Composition](Samples/ComponentComposition.md)
+   * [Component Composition](Samples/ComponentComposition.md)
 * [Development Environment](DevelopmentEnvironment.md)
    * [IDE](IDE.md)
    * [Package Management](PackageManagement.md)
