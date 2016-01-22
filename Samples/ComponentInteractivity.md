@@ -1,4 +1,4 @@
-# 5 - Component Interactivity
+#Component Interactivity
 
 This sample gives an basic example of using adding interactivity to a component.
 
