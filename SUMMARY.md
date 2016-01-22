@@ -5,7 +5,7 @@
    * [Setting Up Samples](SettingUpSamples.md)
    * [Component Basics](Samples/ComponentBasic.md)
    * [Components in Separate Files](Samples/ComponentsInSeparateFiles.md)
-   * [4 - Component Props and State](Samples/ComponentPropsAndState.md)
+   * [Component Props and State](Samples/ComponentPropsAndState.md)
    * [5 - Component Interactivity](Samples/ComponentInteractivity.md)
    * [6 - Accept User Input](Samples/AcceptUserInput.md)
    * [7 - Component Composition](Samples/ComponentComposition.md)
