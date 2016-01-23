@@ -106,6 +106,7 @@ export default class HelloForm extends React.Component<any, any> {
 	}
 }
 ```
+Here we have a new component responsible for the collecting user input for our tiny application. By now this code should be familiar. We just moved the input element from the `HelloWorld` component and encapsulated in this new component. 
 
 ##src/hellocontent.tsx
 
@@ -128,4 +129,11 @@ export default class HelloContent extends React.Component<any, any> {
 	}
 }
 ```
+This is a component responsible for displaying the hello message. Again, this component is a result of encapsulating this section of the DOM out of the `HelloWorld` component.
+
+###Stateless Components
+
+One interesting observation about these components is that they are stateless. THey does not hold any state and they rely on a parent component to pass `props` to it in order to do its work. This includes event handlers and data as you can see in the code. 
+
+When possible using stateless components are preferred in React. They help to improve performance because they lessen the amount of processing that React has to do with the component.
 
