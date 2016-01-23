@@ -3,6 +3,7 @@
 Next, we will setup our build automation. The primary reason we want to do this is so we don't have to run the commnand line every time we make changes. In fact, our build automation will allow us to automatically see the results of changes in the browser after we save them. We can start one simple task in the command line and the automation will take care of linting, compiling, bundling, refreshing the browser and more when ever we make changes.This allows us to get very fast feedback on changes. If we have fast unit tests, this automation will also help us keep some bugs from creeping into our app. So, build automation will not only make development go faster, provide faster feedback, help keep quality high, it will also give us a consistent way to build our application.
 
 ##Gulp
+
 We are going to use Gulp for our task runner and Browserify to bundle. To be honest, I was going to switch to npm and WebPack. The React community seems to have embraced WebPack as the defacto bundler. So, there are plenty of examples online. Also I went with Browserify because the learning curve is bigger for WebPack and I don't want it to be a distraction. 
 
 Actually, we are going to use Gulp 4. At the time of this writing, this new version of Gulp hasn't been released. The main reason I decided to go with this early release version is that it has new features that will make our automation a little easier to work with.
