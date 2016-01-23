@@ -72,7 +72,7 @@ return (
 
 We are adding a new HTML element, button (remember that HTML elements start with lowercase letter). The interesting bit is that we are binding the element's `onClick` event to the `handleOnClick` method. To bind the event handler with the event we are using the new ES6 arrow function expression to simplify function context binding. Notice that the event handler is camelCased which is consistent with JavaScript style.
 
-####Function Context Binding
+##Function Context Binding
 
 In the end, React is just plain JavaScript. The React Team has resisted the urge to add a lot of magic and have made strides to remove magic to reduce coupling. Magic is the encapsulated work that is hidden behind abstractions. When a library does work behind the scenes without you knowing it, its magic. Reducing this hidden work helps to losen coupling and that is a good thing because it enables reuse. The React team believes our code shouldn't have a lot of coupling to React.  
   
