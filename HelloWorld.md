@@ -18,8 +18,8 @@ The samples are limited in scope because this is just an introduction. Additiona
 - Immutable.js
 - Flux
 - Redux
-- Relay
 - GraphQL
+- Relay
 - Application Configuration Management
 - Session Management
 - Caching
