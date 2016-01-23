@@ -48,6 +48,11 @@ return (
 
 We are just passing `defaultName` to the `HelloWorld` component. This is doing exactly what you think it is, its setting the default value for who we are saying Hello to. Notice that this name is explicit in defining this input. It is a default value, the HelloWorld component can change this value and the assumption is that it may be changed.
 
+Another thing to notice is the camelCasing. 
+
+*All DOM properties and attributes (including event handlers) should be camelCased to be consistent with standard JavaScript style.
+https://facebook.github.io/react/docs/dom-differences.html*
+
 ##src/helloworld.tsx
 
 ```
