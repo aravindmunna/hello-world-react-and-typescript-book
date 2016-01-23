@@ -19,6 +19,10 @@ Next, we break down the automation used in the sample. We review IDEs, package m
 
 Then we review some interesting concepts in React and TypeScript.
 
+##Programming Language
+
+This book will use [ECMAScript 2015 (ES6)](http://tc39.github.io/ecma262/). React and TypeScript discussions and source code will be expressed in ES6 and above.  
+
 ##Code Samples and Examples
 
 You can find the code samples and examples from the book on GitHub - http://charleslbryant.github.io/hello-react-and-typescript.
