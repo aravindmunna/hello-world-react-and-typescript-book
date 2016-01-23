@@ -13,7 +13,7 @@
    * [IDE](IDE.md)
    * [Package Management](PackageManagement.md)
    * [TypeScript Environment](TypescriptEnvironment.md)
-   * Testing
+   * [Testing](Testing.md)
    * [Automation](Automation.md)
 * [React](React.md)
 * [TypeScript](TypeScript.md)
