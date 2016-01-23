@@ -135,7 +135,7 @@ This is a component responsible for displaying the hello message. Again, this co
 
 ###Stateless Components
 
-One interesting observation about these components is that they are stateless. THey does not hold any state and they rely on a parent component to pass `props` to it in order to do its work. This includes event handlers and data as you can see in the code. 
+One interesting observation about these components is that they are stateless. They don't hold any state and they rely on a parent component to pass `props` to it in order to do its work. This includes event handlers and data as you can see in the code. 
 
 When possible using stateless components are preferred in React. They help to improve performance because they lessen the amount of processing that React has to do with the component.
 
