@@ -85,7 +85,7 @@ With these changes we have implemented a unidirectional data flow.
  
 State is only changes as the result of an event. The Hello message is no bound to an external model state and can only be updated as a result of an event being triggered by user input. This is different than two way binding or bi-directional data flow where changes in a model can also update the state of a view.
 
-### Unidirectional Data Flow (UDF)
+## Unidirectional Data Flow (UDF)
 
 event > event handler > state > render 
 
@@ -95,7 +95,7 @@ The sample is a simple naive example because we aren't dealing with external or 
 
 If you are having trouble understanding UDF, when you learn about Flux it will makes more sense. The Flux architecture helps you visualize data flow in a circular one way round trip. Even though it may be hard to see UDF within the context of a single component the same event flow is used to accomplish UDF in React whether within a single component, a Flux architecture, or using Relay (another Facebook library). When you get into Flux or other data flow patterns or libraries, UDF will be expanded to add additional concepts into the data flow.
 
-### UDF vs Bi-directional Data Flow
+## UDF vs Bi-directional Data Flow
 
 The important thing to notice about UDF is that we aren't attempting to create a complex bi-directional view binding with some external model. We are binding to the state modeled within a component with no dependency or complex mapping to some external data model. The component is responsible for expressing its own state, updating its state, passing properties to its child components, and re-rendering itself and children when state changes as the result of some event.
 
