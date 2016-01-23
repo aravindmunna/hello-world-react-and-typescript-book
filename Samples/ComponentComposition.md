@@ -1,6 +1,6 @@
 #Component Composition
 
-This sample gives a basic example of building modular components that can be used to compose a UI.
+This sample gives a basic example of refactoring the Hello World application by composing the UI with modular components.
 
 **Source Code** 
 
