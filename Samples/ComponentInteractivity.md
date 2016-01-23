@@ -70,7 +70,7 @@ return (
 );
 ```
 
-We are adding a new HTML element, button (remember that HTML elements start with lowercase letter). The interesting bit is that we are binding the element's `onClick` event to the `handleOnClick` method. Notice that the event handler is camelCased which is consistent with JavaScript style. To bind the event handler with the event we are using the new ES6 arrow function expression to simplify function context binding.
+We are adding a new HTML element, button (remember that HTML elements start with lowercase letter). The interesting bit is that we are binding the element's `onClick` event to the `handleOnClick` method. To bind the event handler with the event we are using the new ES6 arrow function expression to simplify function context binding. Notice that the event handler is camelCased which is consistent with JavaScript style.
 
 ####Function Context Binding
 
