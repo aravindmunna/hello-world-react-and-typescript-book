@@ -4,7 +4,7 @@ Next, we will setup our build automation. The primary reason we want to do this 
 
 ##Gulp
 
-We are going to use Gulp for our task runner and Browserify to bundle. To be honest, I was going to switch to npm and WebPack. The React community seems to have embraced WebPack as the defacto bundler. So, there are plenty of examples online. Also I went with Browserify because the learning curve is bigger for WebPack and I don't want it to be a distraction. 
+We are going to use Gulp for our task runner and Browserify to bundle. To be honest, I was going to switch to npm and WebPack. The React community seems to have embraced WebPack as the defacto bundler. So, there are plenty of examples online. Also, I went with Browserify because the learning curve is bigger for WebPack and I don't want it to be a distraction. 
 
 Actually, we are going to use Gulp 4. At the time of this writing, this new version of Gulp hasn't been released. The main reason I decided to go with this early release version is that it has new features that will make our automation a little easier to work with.
 
