@@ -9,7 +9,7 @@
    * [Component Interactivity](Samples/ComponentInteractivity.md)
    * [Accept User Input](Samples/AcceptUserInput.md)
    * [Component Composition](Samples/ComponentComposition.md)
-   * Define Props and State Types
+   * [Define Props and State Types](DefinePropsAndStateTypes.md)
 * [Development Environment](DevelopmentEnvironment.md)
    * [IDE](IDE.md)
    * [Package Management](PackageManagement.md)
