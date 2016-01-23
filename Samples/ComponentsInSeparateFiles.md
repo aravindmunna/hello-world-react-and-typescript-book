@@ -17,7 +17,7 @@ We only have two changes to explore the main.tsx file.
 
 import * as React from 'react';
 import * as DOM from 'react-dom';
-import HelloWorld from './helloworld';//Add new import
+import HelloWorld from 'helloworld';//Add new import
 
 const root = document.getElementById('app');
 
@@ -41,12 +41,10 @@ Let's look at the differences.
 ---
 
 ```
-import HelloWorld from './helloworld';
+import HelloWorld from 'helloworld';
 ```
 
-We added a new import to import the HelloWorld component. You will notice that this import is a little different. Before we only imported external modules. TypeScript knows to look in the node_moduels folder for these modules so we only needed to include the name of the module. You can define other locations for external modules, but we won't go into that here.
-
-With our new custom internal module, we need to tell TypeScript where it is located. That's why we have a relative path to the module as the `from` value. We can also get around this and define the location for our internal modules, but this is straight forward for this little sample.
+We added a new import to import the HelloWorld component. 
 
 ---
 
