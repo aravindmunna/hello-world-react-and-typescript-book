@@ -12,9 +12,12 @@ https://github.com/charleslbryant/hello-react-and-typescript.git
 
 ##Thoughts for More Robust Scalable App
 
-The samples are limited in scope because this is just an introduction. Additional topics to explore include:
+The samples are limited in scope because this is just an introduction. Additional topics that you can explore explore include:
 
+- ReactRouter
+- Immutable.js
 - Flux
+- Redux
 - Relay
 - GraphQL
 - Application Configuration Management
@@ -29,3 +32,4 @@ The samples are limited in scope because this is just an introduction. Additiona
     - Token
     - OAuth
   - Authorization
+  - and much more
