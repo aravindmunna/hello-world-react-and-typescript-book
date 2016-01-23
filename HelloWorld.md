@@ -8,7 +8,7 @@ Exploring Hello World is great to get you grounded before exploring more "real w
 
 You can download the code samples with the link provided for each sample. You can also get a copy of the source from the GitHub repository by cloning
 
-https://github.com/charleslbryant/hello-world-react-and-typescript.git
+https://github.com/charleslbryant/hello-react-and-typescript.git
 
 ##Thoughts for More Robust Scalable App
 
