@@ -106,7 +106,9 @@ export default class HelloForm extends React.Component<any, any> {
 	}
 }
 ```
-Here we have a new component responsible for the collecting user input for our tiny application. By now this code should be familiar. We just moved the input element from the `HelloWorld` component and encapsulated in this new component. 
+Here we have a new component responsible for the collecting user input for our tiny application. By now this code should be familiar. We just moved the input element from the `HelloWorld` component and encapsulated it in this new component. 
+
+For this simple example we are storing all of our components in one folder. As your application grows you may want to use a folder structure that makes the number of component files more manageable. When you are at the point of doing this you will have to address the reference path for the TypeScript typings. It will become a maintenance issue having to keep the path in sync as you move components and build new folder structures, but we won't go into that just yet.
 
 ##src/hellocontent.tsx
 
