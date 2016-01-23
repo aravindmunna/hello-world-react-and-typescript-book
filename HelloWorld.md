@@ -10,11 +10,9 @@ You can download the code samples with the link provided for each sample. You ca
 
 https://github.com/charleslbryant/hello-world-react-and-typescript.git
 
-##Handle Events
-
-##Accept User Input
-
 ##Thoughts for More Robust Scalable App
+
+The samples are limited in scope because this is just an introduction. Additional topics to explore include:
 
 - Flux
 - Relay
