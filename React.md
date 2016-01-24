@@ -35,7 +35,7 @@ React doesn't have a template system, but you can use markup that feels like HTM
 
 JSX is not a template it is a high level abstraction of the DOM. JSX must be transformed before it is used. When you use a JSX transformer, with tools like Babel or TypeScipt compiler, JSX elements are transformed to plain JavaScript `React.createElement` methods. 
 
-JSX gives us an abstraction that allows us to be more declarative while writing our view. We are using familiar HTML like structure to declare what I want in the DOM structure. As opposed to defining the DOM with a lot of `React.CreateElement` calls. `React.CreateElement`is declarative, but the declaration is a little easier to grok as a traditional web developer or designer.
+JSX gives us an abstraction that allows us to be more declarative while writing our view. We are using familiar HTML like structure to declare what  the DOM structure is. As opposed to defining the DOM with a lot of `React.CreateElement` calls. Building a UI with `React.CreateElement`is still declarative, but the declaration with JSX is a little easier to grok as a traditional web developer or designer.
 
 There are some difference from HTML that you have to watch out for while writing JSX. You can't use JavaScript keywords. For instance, instead of defining a CSS `class` attribute on your JSX element you use `className`. Instead of using `for` to relate a label with an element you use `htmlFor`.
 
