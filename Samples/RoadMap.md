@@ -2,6 +2,7 @@
 
 ## Component Behavior
 
+* ~~Setup~~
 * ~~Basic~~
 * ~~Components in Separate Files~~
 * ~~Component Props and State~~
