@@ -11,15 +11,17 @@
 * ~~Component Composition~~
 * Define Props and State Types
 * Component Life Cycle
-* Forms (use each input type)
+* Forms Input Types
+* Routing
 
-## Component State
+## Manage Component State
 
-* Immutable State with Immutable.js
-* Manage State with Flux
-* Manage State with Redux
-* Retrieving State with GraphQL
-* Manage State with Relay
+* Immutable.js
+* Flux
+* Redux
+* GraphQL
+* Relay
+* Falcore
 
 ## Component Styles 
 
