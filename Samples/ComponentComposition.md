@@ -12,8 +12,8 @@ https://github.com/charleslbryant/hello-react-and-typescript/releases/tag/0.0.7
 /// <reference path="../typings/tsd.d.ts" />
 
 import * as React from 'react';
-import HelloForm from 'helloform';
-import HelloContent from 'hellocontent';
+import HelloForm from './helloform';
+import HelloContent from './hellocontent';
 
 export default class HelloWorld extends React.Component<any, any> {
     constructor(props: any){
@@ -50,11 +50,11 @@ The `HelloWorld` component is updated to compose the same UI as the previous exa
 
 ```
 import * as React from 'react';
-import HelloForm from 'helloform';
-import HelloContent from 'hellocontent';
+import HelloForm from './helloform';
+import HelloContent from './hellocontent';
 ```
 
-To compose with components the components you want to compose have to be in scope. To do this we import the components. `HelloForm` and `HelloContent` are imported by using the `import` statement with the `from` value being the name of the component.
+To compose with components the components you want to compose have to be in scope. To do this we import the components. `HelloForm` and `HelloContent` are imported by using the `import` statement with the `from` value being the relative path to the component with no extension.
 
 ---
 
