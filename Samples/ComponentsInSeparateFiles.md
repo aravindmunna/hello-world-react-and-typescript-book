@@ -17,7 +17,7 @@ We only have two changes to explore the main.tsx file.
 
 import * as React from 'react';
 import * as DOM from 'react-dom';
-import HelloWorld from 'helloworld';//Add new import
+import HelloWorld from './helloworld';//Add new import
 
 const root = document.getElementById('app');
 
@@ -41,10 +41,10 @@ Let's look at the differences.
 ---
 
 ```
-import HelloWorld from 'helloworld';
+import HelloWorld from './helloworld';
 ```
 
-We added a new import to import the HelloWorld component. 
+We added a new import to import the HelloWorld component.Notice that we use a relative path to the component with no extension.
 
 ---
 
