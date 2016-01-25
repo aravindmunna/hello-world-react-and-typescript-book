@@ -119,8 +119,6 @@ export default class HelloContent extends React.Component<any, any> {
 ```
 This is very similar to the change we made to `HelloWorldForm` component.
 
-##TypeScript Type Checking
-
 
 
 
