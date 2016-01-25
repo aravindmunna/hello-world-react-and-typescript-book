@@ -9,9 +9,9 @@
 * ~~Component Interactivity~~
 * ~~Accept User Input~~
 * ~~Component Composition~~
-* Define Props and State Types
+* ~~Define Props and State Types~~
+* Form Input Types
 * Component Life Cycle
-* Forms Input Types
 * Routing
 
 ## Manage Component State
