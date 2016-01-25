@@ -1,4 +1,4 @@
-# Define Props and State Types
+#Define Props and State Types
 
 This sample gives shows how we can get more type checking to protect from errors by defining the expected type for Props and State.
 
